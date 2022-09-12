@@ -15,7 +15,9 @@ export default function PostsPage({ totalPage, page, posts }: PostsPageProps): R
   return (
     <Layout>
       hello {JSON.stringify({ totalPage, page, posts })}
-      <Pagination currentPage={page} totalPage={totalPage}/>
+      <div className="fixed bottom-0 w-full">
+        <Pagination currentPage={page} totalPage={totalPage}/>
+      </div>
     </Layout>
   )
 }
