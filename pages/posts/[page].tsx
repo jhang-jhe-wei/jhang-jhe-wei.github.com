@@ -4,6 +4,7 @@ import Pagination from '../../components/pagination';
 
 import * as posts from '../../lib/posts';
 import type { Post } from '../../lib/posts';
+import PostCard from '../../components/blog/PostCard';
 
 interface PostsPageProps {
   totalPage: number;
@@ -15,6 +16,15 @@ export default function PostsPage({ totalPage, page, posts }: PostsPageProps): R
   return (
     <Layout>
       hello {JSON.stringify({ totalPage, page, posts })}
+      <div className="container mx-auto">
+        {
+          posts.map(post => (
+            <>
+            <PostCard post={post}/>
+              </>
+            ))
+        }
+      </div>
       <div className="fixed bottom-0 w-full">
         <Pagination currentPage={page} totalPage={totalPage}/>
       </div>

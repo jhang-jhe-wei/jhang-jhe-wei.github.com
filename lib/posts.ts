@@ -1,6 +1,8 @@
 import grayMatter from 'gray-matter';
 import { promises as fs } from 'fs';
 import path from 'path';
+import {remark} from 'remark';
+import strip from 'strip-markdown';
 
 import { genQuery, genLinkProps, parseQuery } from './postQuery';
 
@@ -10,6 +12,8 @@ export interface Post {
   options: {
     title: string;
     createdAt: string;
+    tags?: string[];
+    description?: string;
   };
   content: string;
 }
@@ -53,7 +57,14 @@ export const all: () => Post[] = withCache(async () => {
     ).flatMap(
       match => (match ? [{ filename: match[0], slug: match[1] }] : []),
     ).map(async post => {
-      const { options } = await extractPost(post.filename);
+      const { options, content } = await extractPost(post.filename);
+      remark()
+        .use(strip)
+        .process(content.replace(/(<([^>]+)>)/gi, ""))
+        .then((file) => {
+          console.log(String(file))
+          options.description = String(file)
+        })
 
       return { ...post, options };
     }),
