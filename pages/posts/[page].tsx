@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next'
 import Layout from '../../components/layout'
+import Pagination from '../../components/pagination';
 
 import * as posts from '../../lib/posts';
 import type { Post } from '../../lib/posts';
@@ -14,6 +15,7 @@ export default function PostsPage({ totalPage, page, posts }: PostsPageProps): R
   return (
     <Layout>
       hello {JSON.stringify({ totalPage, page, posts })}
+      <Pagination currentPage={page} totalPage={totalPage}/>
     </Layout>
   )
 }
