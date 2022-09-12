@@ -15,13 +15,10 @@ interface PostsPageProps {
 export default function PostsPage({ totalPage, page, posts }: PostsPageProps): React.ReactElement {
   return (
     <Layout>
-      hello {JSON.stringify({ totalPage, page, posts })}
       <div className="container mx-auto">
         {
           posts.map(post => (
-            <>
-            <PostCard post={post}/>
-              </>
+            <PostCard key={post.slug} post={post}/>
             ))
         }
       </div>
