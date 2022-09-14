@@ -15,7 +15,7 @@ interface PostsPageProps {
 export default function PostsPage({ totalPage, page, posts }: PostsPageProps): React.ReactElement {
   return (
     <Layout>
-      <div className="container mx-auto">
+      <div className="container pb-12 mx-auto">
         {
           posts.map(post => (
             <PostCard key={post.slug} post={post}/>

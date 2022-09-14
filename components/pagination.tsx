@@ -7,7 +7,7 @@ interface PaginationProps {
 export default function Pagination({ totalPage, currentPage }: PaginationProps) {
   return (
     <>
-      <div className="flex items-center justify-center px-4 py-10 lg:px-0 sm:px-6">
+      <div className="flex items-center justify-center px-4 pb-2 bg-white lg:px-0 sm:px-6">
         <div className="flex items-center justify-between w-full border-t border-gray-200 lg:w-3/5">
           <div className="flex items-center pt-3 text-gray-600 cursor-pointer hover:text-indigo-700">
             <svg width={14} height={8} viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
