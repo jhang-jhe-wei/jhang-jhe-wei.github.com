@@ -20,9 +20,9 @@ export default function Pagination({ totalPage, currentPage }: PaginationProps) 
           <div className="hidden sm:flex">
             {
               Array(totalPage).fill(0).map((_, index) => (
-                <p key={index} className={`px-2 pt-3 mr-4 text-sm font-medium leading-none text-gray-600 border-t border-transparent cursor-pointer ${index === currentPage? 'text-indigo-700 border-indigo-400 ': 'hover:text-indigo-700 hover:border-indigo-400 '}`}>
+                <a key={index} className={`px-2 pt-3 mr-4 text-sm font-medium leading-none text-gray-600 border-t border-transparent cursor-pointer ${index === currentPage? 'text-indigo-700 border-indigo-400 ': 'hover:text-indigo-700 hover:border-indigo-400 '}`} href={`/posts/${index + 1}`}>
                   { index + 1 }
-                </p>
+                </a>
               ))
             }
           </div>
