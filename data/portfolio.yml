@@ -72,6 +72,13 @@
     demo_link: https://youtu.be/cr1C7mOcJQ0
     code_link: https://github.com/jhang-jhe-wei/Using-user-button-control-LCD-LED-in-STM32f746g-DISCOVERY
 -
+    title: 踩地雷
+    tag: 遊戲
+    image: /images/minesweeper.png
+    description: 含有三種不同大小的採地雷，使用 React 實作。
+    demo_link: https://react-minesweep.wells.tw/
+    code_link: https://github.com/jhang-jhe-wei/react-minesweep
+-
     title: JAVA 實作星際大戰
     tag: 遊戲
     image: /images/star-war.png
