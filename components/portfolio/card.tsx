@@ -22,11 +22,11 @@ export default function Card({ project }: { project: Project }) {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Project Modal"
-        className="bg-white max-w-md flex flex-col max-h-screen-80"
+        className="flex flex-col max-w-md bg-white max-h-screen-80"
         overlayClassName="z-40 fixed inset-0 bg-dark-mask px-5 flex justify-center items-center"
       >
-        <div className="overflow-y-auto flex-1">
-          <img className="object-scale-down object-center bg-gray-300 w-full max-h-screen-1/3" src={project.image} alt={project.title} />
+        <div className="flex-1 overflow-y-auto">
+          <img className="object-scale-down object-center w-full bg-gray-300 max-h-screen-1/3" src={project.image} alt={project.title} />
           <div className="mx-6 mt-5 text-lg">
             <h2 className="font-bold text-secondary">{project.title}</h2>
             <p className="mt-5 text-sm text-zinc-700">{project.description}</p>
@@ -40,10 +40,10 @@ export default function Card({ project }: { project: Project }) {
             }
           </div>
         </div>
-        <button onClick={closeModal} className="w-full h-10 bg-red-700 text-center text-white">close</button>
+        <button onClick={closeModal} className="w-full h-10 text-center text-white bg-red-700">close</button>
       </Modal>
 
-      <div ref={element} className={`hover:scale-110 mx-auto max-w-xs bg-white font-notosans transition-all duration-500 ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'}`} onClick={openModal}>
+      <div ref={element} className={`hover:scale-110 mx-auto max-w-xs bg-white font-notosans transition-all duration-500 hover:cursor-pointer ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'}`} onClick={openModal}>
         <img className="object-scale-down object-center bg-gray-300 h-60 w-80" src={project.image} alt={project.title} />
         <div className="mx-6 mt-5 text-lg">
           <h2 className="font-bold text-secondary">{project.title}</h2>
