@@ -24,6 +24,10 @@ works:
     subTitle: "Cyberbiz"
     startedAt: "七月 2022"
     endedAt: "Present"
+    highlights:
+      - 導入自動化測試到 LINE 團購
+      - 升級 E-Tag 功能
+      - 完成簡訊預約功能
   -
     title: "Part Time"
     subTitle: "愛好資訊科技有限公司"
