@@ -4,6 +4,7 @@ import store, { useAppSelector } from '../reducers/store'
 import { Provider } from 'react-redux'
 import { useEffect } from 'react'
 import Modal from 'react-modal';
+import '../i18n'
 Modal.setAppElement('#__next');
 
 export default function App({ Component, pageProps }: AppProps) {
