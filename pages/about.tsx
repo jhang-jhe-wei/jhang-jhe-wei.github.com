@@ -13,7 +13,6 @@ import Projects from '../components/about/projects'
 import Resume from '../components/about/resume'
 import { getPortfolioData } from '../lib/portfolio'
 import { ProjectProps} from '../interfaces/portfolio_interface'
-import { useTranslation } from 'react-i18next';
 
 interface AboutProps {
     education: ListItemProps[];
@@ -24,14 +23,12 @@ interface AboutProps {
 }
 
 export default function about({education, works, achievements, skillsList, projects}:AboutProps): React.ReactElement{
-  const { t, i18n } = useTranslation();
 
   return (
     <Layout>
       <div className="container mx-auto">
         <Head><title>Wells 的經歷</title></Head>
         <h1 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">About</h1>
-        <h1>{t('Welcome to React')}</h1>
         <Toc/>
         <Profile/>
         <div className="mt-56 print:mt-14">

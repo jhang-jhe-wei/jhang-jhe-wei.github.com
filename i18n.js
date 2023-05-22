@@ -8,12 +8,18 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   en: {
     translation: {
-      "Welcome to React": "Welcome to React and react-i18next"
+      portfolio: "Portfolio",
+      about: "About",
+      blog: "Blog",
+      contact: "Contact Me",
     }
   },
   'zh-TW': {
     translation: {
-      "Welcome to React": "歡迎使用 React 和 react-i18next"
+      portfolio: "作品集",
+      about: "關於我",
+      blog: "部落格",
+      contact: "聯絡我",
     }
   }
 };

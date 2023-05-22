@@ -6,9 +6,12 @@ import NavHamburger from './nav_hamburger_item'
 import NavMobileMenu from './nav_mobile_menu'
 import NavLanguage from './nav_language'
 import { useState } from 'react'
+import {useTranslation} from 'react-i18next'
 
 export default function Nav():React.ReactElement{
   const [reveal, setReveal] = useState(false);
+  const { t } = useTranslation();
+
   return (
     <nav className="sticky top-0 z-30 px-10 py-6 bg-light dark:bg-primary bg-opacity-60 dark:bg-opacity-60 backdrop-blur dark:backdrop-blur print:hidden">
       <div className="flex items-center justify-between mx-auto">
@@ -17,10 +20,10 @@ export default function Nav():React.ReactElement{
           className="text-2xl text-primary dark:text-white hover:no-underline">Wells
         </Link>
         <div className="items-center hidden sm:flex">
-          <NavItem href="/portfolio">作品集</NavItem>
-          <NavItem href="/about">經歷</NavItem>
-          <NavItem href="https://blog.wells.tw" newTab={true} >部落格</NavItem>
-          <NavBtnItem href="mailto:jhang0912407249@gmail.com">聯絡我</NavBtnItem>
+          <NavItem href="/portfolio">{t('portfolio')}</NavItem>
+          <NavItem href="/about">{t('about')}</NavItem>
+          <NavItem href="https://blog.wells.tw" newTab={true} >{t('blog')}</NavItem>
+          <NavBtnItem href="mailto:jhang0912407249@gmail.com">{t('contact')}</NavBtnItem>
           <NavIconItem/>
           <NavLanguage/>
         </div>
