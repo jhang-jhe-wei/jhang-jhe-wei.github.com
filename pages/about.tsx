@@ -14,6 +14,10 @@ import Resume from '../components/about/resume'
 import { getPortfolioData } from '../lib/portfolio'
 import { ProjectProps} from '../interfaces/portfolio_interface'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { i18n } from '../next-i18next.config'
+import { useAppDispatch } from '../reducers/store'
+import { changeLanguage } from '../reducers/locale_slice'
+import { useEffect } from 'react'
 
 interface AboutProps {
     education: ListItemProps[];
@@ -21,9 +25,14 @@ interface AboutProps {
     achievements: AchievementProps[];
     skillsList: SkillsProps[];
     projects: ProjectProps[];
+    locale: typeof i18n.locales[number];
 }
 
-export default function about({education, works, achievements, skillsList, projects}:AboutProps): React.ReactElement{
+export default function about({education, works, achievements, skillsList, projects, locale}:AboutProps): React.ReactElement{
+  const dispatch = useAppDispatch();
+  useEffect(()=>{
+    dispatch(changeLanguage(locale))
+  }, [])
 
   return (
     <Layout>

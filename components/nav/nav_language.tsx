@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
+import { useAppSelector, useAppDispatch } from '../../reducers/store';
+import { changeLanguage } from '../../reducers/locale_slice';
 
 const lngs = {
   en: { nativeName: 'English' },
@@ -7,11 +9,18 @@ const lngs = {
 };
 
 const NavLanguage = () => {
-  const { i18n } = useTranslation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const router = useRouter();
+  const { language } = useAppSelector(state => state.locale);
+  const dispatch = useAppDispatch();
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen(isDropdownOpen => !isDropdownOpen);
+  };
+
+  const onToggleLanguageClick = (newLocale: string) => {
+    const { pathname, asPath, query } = router;
+    router.push({ pathname, query }, router.asPath, { locale: newLocale });
   };
 
   return (
@@ -38,16 +47,17 @@ const NavLanguage = () => {
                 py-2
                 text-left
                 ${
-                  i18n.resolvedLanguage === lng ?
+                  language === lng ?
                     'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
                     : 'cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-white dark:hover:text-secondary hover:text-secondary'
                 }`
               }
               onClick={() => {
-                // i18n.changeLanguage(lng);
+                onToggleLanguageClick(lng);
                 setIsDropdownOpen(false);
+                dispatch(changeLanguage(lng))
               }}
-              disabled={i18n.resolvedLanguage === lng}
+              disabled={language === lng}
             >
               {lngs[lng].nativeName}
             </button>
