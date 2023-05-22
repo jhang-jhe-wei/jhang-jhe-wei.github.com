@@ -24,12 +24,12 @@ export default function Nav():React.ReactElement{
           <NavItem href="/about">{t('about')}</NavItem>
           <NavItem href="https://blog.wells.tw" newTab={true} >{t('blog')}</NavItem>
           <NavBtnItem href="mailto:jhang0912407249@gmail.com">{t('contact')}</NavBtnItem>
-          <NavIconItem/>
           <NavLanguage/>
+          <NavIconItem/>
         </div>
         <div className="flex items-center justify-between w-50 sm:hidden">
-          <NavIconItem/>
           <NavLanguage/>
+          <NavIconItem/>
           <div className="z-50">
             <NavHamburger reveal={reveal} setReveal={setReveal}/>
           </div>
