@@ -6,6 +6,8 @@ import Tags from '../components/portfolio/tags'
 import { ProjectProps as Project } from '../interfaces/portfolio_interface'
 import { getPortfolioData } from '../lib/portfolio'
 import { useRouter } from 'next/router'
+import {useTranslation} from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 interface PortfolioProps {
   projects: Project[];
@@ -14,12 +16,13 @@ interface PortfolioProps {
 
 export default function Portfolio({ projects, tags }: PortfolioProps): React.ReactElement {
   const queryTag = getQueryTag() || tags[0];
+  const { t } = useTranslation()
 
   return (
     <Layout>
-      <Head><title>portfolio</title></Head>
+      <Head><title>{t('portfolio')}</title></Head>
       <div className="container mx-auto">
-        <h1 className="text-5xl text-center text-primary dark:text-white mt-28">Portfolio</h1>
+        <h1 className="text-5xl text-center text-primary dark:text-white mt-28">{t('portfolio')}</h1>
         <Tags tags={tags} queryTag={queryTag} />
         <div className="pb-20 mt-12 gap-9 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {projects.filter(project => project.tag == queryTag).map(project => <Card key={project.title} project={project} />)}
@@ -29,13 +32,16 @@ export default function Portfolio({ projects, tags }: PortfolioProps): React.Rea
   )
 }
 
-export const getStaticProps: GetStaticProps<PortfolioProps> = async () => {
+export const getStaticProps: GetStaticProps<PortfolioProps> = async ({locale}) => {
   const projects: Project[] = await getPortfolioData()
   const tags = Array.from(new Set(projects.map(project => project.tag)));
   return {
     props: {
       projects,
-      tags
+      tags,
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
     }
   }
 }

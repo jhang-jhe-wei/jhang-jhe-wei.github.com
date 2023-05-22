@@ -13,6 +13,7 @@ import Projects from '../components/about/projects'
 import Resume from '../components/about/resume'
 import { getPortfolioData } from '../lib/portfolio'
 import { ProjectProps} from '../interfaces/portfolio_interface'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 interface AboutProps {
     education: ListItemProps[];
@@ -48,13 +49,16 @@ export default function about({education, works, achievements, skillsList, proje
   )
 }
 
-export const getStaticProps: GetStaticProps<AboutProps> = async () => {
+export const getStaticProps: GetStaticProps<AboutProps> = async ({locale}) => {
   const aboutData = await getAboutData();
   const projects: ProjectProps[] = await getPortfolioData()
   return {
     props: {
       ...aboutData,
-      projects
+      projects,
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
     }
   }
 }

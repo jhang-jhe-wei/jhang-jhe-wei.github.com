@@ -3,6 +3,7 @@ import Signboard from '../components/landing/signboard'
 import PipelineDiagram from '../components/landing/pipeline_diagram'
 import Footer from '../components/landing/footer'
 import Layout from '../components/layout'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Home():React.ReactElement {
   return (
@@ -34,4 +35,14 @@ export default function Home():React.ReactElement {
       </div>
     </>
   )
+}
+
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }

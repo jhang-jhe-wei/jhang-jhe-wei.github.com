@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 
 const lngs = {
   en: { nativeName: 'English' },
@@ -44,7 +44,7 @@ const NavLanguage = () => {
                 }`
               }
               onClick={() => {
-                i18n.changeLanguage(lng);
+                // i18n.changeLanguage(lng);
                 setIsDropdownOpen(false);
               }}
               disabled={i18n.resolvedLanguage === lng}

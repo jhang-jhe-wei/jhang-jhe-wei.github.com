@@ -6,7 +6,7 @@ import NavHamburger from './nav_hamburger_item'
 import NavMobileMenu from './nav_mobile_menu'
 import NavLanguage from './nav_language'
 import { useState } from 'react'
-import {useTranslation} from 'react-i18next'
+import {useTranslation} from 'next-i18next'
 
 export default function Nav():React.ReactElement{
   const [reveal, setReveal] = useState(false);
