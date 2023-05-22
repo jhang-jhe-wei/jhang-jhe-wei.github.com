@@ -4,6 +4,7 @@ import NavBtnItem from './nav_btn_item'
 import NavIconItem from './nav_icon_item'
 import NavHamburger from './nav_hamburger_item'
 import NavMobileMenu from './nav_mobile_menu'
+import NavLanguage from './nav_language'
 import { useState } from 'react'
 
 export default function Nav():React.ReactElement{
@@ -21,9 +22,11 @@ export default function Nav():React.ReactElement{
           <NavItem href="https://blog.wells.tw" newTab={true} >部落格</NavItem>
           <NavBtnItem href="mailto:jhang0912407249@gmail.com">聯絡我</NavBtnItem>
           <NavIconItem/>
+          <NavLanguage/>
         </div>
-        <div className="flex items-center justify-between w-36 sm:hidden">
+        <div className="flex items-center justify-between w-50 sm:hidden">
           <NavIconItem/>
+          <NavLanguage/>
           <div className="z-50">
             <NavHamburger reveal={reveal} setReveal={setReveal}/>
           </div>
