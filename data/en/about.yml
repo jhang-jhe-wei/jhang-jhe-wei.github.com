@@ -1,0 +1,173 @@
+education:
+  -
+    title: National Taiwan University of Science and Technology
+    subTitle: "應用科技學士學位學程"
+    startedAt: "2018"
+    endedAt: "2022"
+    highlights:
+      - "2021 總統教育獎優秀學生獎"
+      - Club Master of Interdisciplinary Student Association
+      - "網球校隊隊員"
+  -
+    title: "花蓮高工"
+    subTitle: "電機科"
+    startedAt: "2014"
+    endedAt: "2017"
+    highlights:
+      - "第 44 屆國際技能競賽電氣裝配世界優勝"
+      - "第 44 屆國際技能競賽電氣裝配國手"
+      - "第 46 屆全國技能競賽電氣裝配金牌"
+
+works:
+  -
+    title: "工程師"
+    subTitle: "Cyberbiz"
+    startedAt: "七月 2022"
+    endedAt: "Present"
+  -
+    title: "Part Time"
+    subTitle: "愛好資訊科技有限公司"
+    startedAt: "二月 2021"
+    endedAt: "Present"
+    highlights:
+      - 維護讚爾水晶球
+      - 維護台灣醒報
+      - 維護 AlphaCamp Lighthouse
+      - 升級 RubyJobs 網站
+      - 開發網站監測系統(uptime.tw)
+  -
+    title: "Free Lancer"
+    subTitle: "MYSELF"
+    startedAt: "一月 2019"
+    endedAt: "Present"
+    highlights:
+      - Sketchup 3D 鋼筋智慧建模插件，減少建築師 90% 鋼筋建模時間成本
+      - LINE Chatbot 客製化群組推播系統，解決只能全群或單群發送的限制
+      - 廣吉食品C2M 系統開發設計與建置
+      - 台科大 QS 聲譽系統
+  -
+    title: "資訊長"
+    subTitle: "毫米隧道科技股份有限公司"
+    startedAt: "六月 2020"
+    endedAt: "一月 2021"
+    highlights:
+      - "本人與學長姐一同創立的新創公司"
+      - "在半年內募得百萬創業獎金"
+      - "經濟部創業歸故里數位應用獎/ Shooly 水電資訊媒合平台/ 75 萬創業獎金"
+      - "Line ChatBot 設計大賽冠軍/ Shooly 水電資訊媒合平台/ 10 萬獎金"
+      - "教育部 109 U-Start 第一階段入圍/ PP-Bank 子母帳戶系統/ 35 萬創業獎金"
+      - "科技部 2020 FITI 全國前 40 名/ PP-Bank 子母帳戶系統/ 5 萬創業獎金"
+  -
+    title: "家教/助教"
+    subTitle: "仲介委託/台科大電機系 Java 課程"
+    startedAt: "八月 2021"
+    endedAt: "Present"
+    highlights:
+      - Java：教學人數超過 50 人
+      - Go：教學人數 1 人
+      - C++：教學人數 5 人
+      - x86 Assembly：教學人數 1 人
+  -
+    title: "軟硬體工程師"
+    subTitle: "安耐美國際智慧節能科技工程有限公司"
+    startedAt: "一月 2018"
+    endedAt: "九月 2019"
+    highlights:
+      - 裝配 108 課綱KNX智慧居家教材
+      - 參與國立臺東大學智慧建案
+      - 參與勞動力勞動部雲嘉南分署智慧屋建案
+      - 參與國立花蓮高工智慧教室建案
+      - 參與南投中埔智慧農場建案
+
+achievements:
+  -
+    title: Worldskills Competitor
+    isFull: false
+    highlights:
+      - "2017 上海國際技能競賽邀請賽 / 室內配線 / 世界金牌"
+      - " 第 44 屆阿布達比國際技能競賽 / 室內配線 / 世界優勝 "
+      - "第 44 屆國際技能競賽 / 室內配線 / 國手"
+  -
+    title: Scholarship Award
+    isFull: false
+    highlights:
+      - 2021 Foxconn Education Scholarship Winner
+      - 2021 Ministry of Education Presidential Education Award/Secondary Award
+      - 2020 Cathaylife Excellence Scholarship Winner
+      - 2020 NTUST Appied Science and Technology Excellence Student Winner
+  -
+    title: Technology Award
+    isFull: false
+    highlights:
+      - Silver medal in the 2020 National Colleges and Universities Smart Innovation and Cross-domain Integration Creation Competition
+      - Champion of the 13th HIWIN Smart Robot Hand Competition
+  -
+    title: Tennis Varsity Members
+    isFull: false
+    highlights:
+      - Shortlisted for the National University Tennis Games
+      - NTRP 2.5 Singles/Doubles Bronze Medal of Easyoga Tennis Competition
+      - NTRP 2.0 Singles Champion of the 2nd Breakpoint Tennis Competition
+  -
+    title: "演講經驗"
+    isFull: true
+    highlights:
+      - "台北電腦公會邀請至嘉義義竹國中演講「技職玩轉人生」/ 2021.11"
+      - "台北電腦公會邀請至彰化大城國中演講「技職玩轉人生」/ 2021.11"
+      - "勞動部技能競賽推廣活動「向下扎根職涯」邀請擔任講師/ 2021.09"
+      - "受邀至南方創客基地演講「走一條體制外的路」"
+      - "受邀至第48屆全國技能競賽北區分區賽解說室內配線 / 2019.04"
+      - "受邀至第47屆全國技能競賽解說室內配線 / 2018.08"
+      - "受邀至第47屆全國技能競賽北區分區賽解說室內配線 / 2018.04"
+
+skillsList:
+    -
+      title: 網站前端
+      skills:
+        -
+          name: HTML
+          proficiency: 50
+        -
+          name: CSS
+          proficiency: 70
+        -
+          name: Javascript
+          proficiency: 80
+    -
+      title: 網站後端
+      skills:
+        -
+          name: Rails
+          proficiency: 80
+        -
+          name: Bash
+          proficiency: 70
+        -
+          name: PostgreSQL
+          proficiency: 80
+    -
+      title: DSL
+      skills:
+        -
+          name: Sketchup
+          proficiency: 50
+        -
+          name: PLC
+          proficiency: 70
+        -
+          name: KNX
+          proficiency: 80
+    -
+      title: Devops
+      skills:
+        -
+          name: Nginx
+          proficiency: 50
+        -
+          name: Git
+          proficiency: 70
+        -
+          name: Docker
+          proficiency: 30
+
+

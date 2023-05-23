@@ -42,7 +42,7 @@ export default function Portfolio({ projects, tags, locale }: PortfolioProps): R
 }
 
 export const getStaticProps: GetStaticProps = async ({locale}) => {
-  const projects: Project[] = await getPortfolioData()
+  const projects: Project[] = await getPortfolioData(locale)
   const tags = Array.from(new Set(projects.map(project => project.tag)));
   return {
     props: {
