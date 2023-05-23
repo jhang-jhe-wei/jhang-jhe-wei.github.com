@@ -1,14 +1,15 @@
+import { useTranslation } from "next-i18next"
 export default function Toc():React.ReactElement {
-  const tags = ["關於我", "教育背景", "工作經驗", "獲獎與成就", "技能專長"]
+  const { t } = useTranslation()
   const anchors = ["profile", "education", "works", "achievements", "skills"]
   return (
     <ul className="justify-center hidden mt-20 sm:flex print:hidden print:sm:hidden">
-    { tags.map((tag, index) =>
-    <li key={ tag } className={`px-6 text-base text-center  ${(index == tags.length -1)? "": "border-r-2 border-primary dark:border-white"}`}>
+    { anchors.map((anchor, index) =>
+    <li key={ anchor } className={`px-6 text-base text-center  ${(index == anchors.length -1)? "": "border-r-2 border-primary dark:border-white"}`}>
       <button onClick={()=>{
-        window.scrollTo({ top: document.getElementById(anchors[index]).offsetTop - window.innerHeight / 2, behavior: 'smooth' }) } }
+        window.scrollTo({ top: document.getElementById(anchor).offsetTop - window.innerHeight / 2, behavior: 'smooth' }) } }
         className="dark:text-opacity-40 dark:hover:text-opacity-100 text-opacity-40 hover:text-opacity-100 text-primary dark:text-light">
-        { tag }
+        { t(`anchors.${anchor}`) }
       </button>
     </li>
     )}

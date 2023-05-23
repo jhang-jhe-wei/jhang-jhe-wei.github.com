@@ -1,0 +1,174 @@
+education:
+  -
+    title: NTUST
+    subTitle: Bachelor Degree Program of Applied Science and Technology
+    startedAt: "2018"
+    endedAt: "2022"
+    highlights:
+      - "2021 President Educational Award"
+      - "Student Club Master"
+      - "Tennis varsity member"
+  -
+    title: "National Hualien Industrial Vocational Senior High School"
+    subTitle: "Electrical Engineering"
+    startedAt: "2014"
+    endedAt: "2017"
+    highlights:
+      - "The 44th WorldSkills Abu Dhabi 2017 Medallion for Excellence"
+      - "The 44th WorldSkills Abu Dhabi 2017 National Competitor"
+      - "The 46th National Skills Competition Golden"
+
+works:
+  -
+    title: "Software Engineer"
+    subTitle: "Cyberbiz"
+    startedAt: "Jul 2022"
+    endedAt: "Present"
+    highlights:
+      - "Implementing automated testing in the LINE group buying system."
+      - "Upgrading the E-Tag feature."
+      - "Implementing the SMS reservation feature."
+  -
+    title: "Part Time"
+    subTitle: "AIHAO"
+    startedAt: "Feb 2021"
+    endedAt: "Jul 2022"
+    highlights:
+      - "Maintaining 讚爾水晶球"
+      - "Maintaining 台灣醒報"
+      - "Maintaining AlphaCamp Lighthouse"
+      - "Upgrading RubyJobs website"
+      - "Developing website monitoring system (uptime.tw)"
+  -
+    title: "Free Lancer"
+    subTitle: "N/A"
+    startedAt: "Jan 2019"
+    endedAt: "Present"
+    highlights:
+      - "Sketchup 3D Reinforcement Intelligent Modeling Plugin, reducing 90% of the architect's rebar modeling time and cost."
+      - "Customized Group Push System for LINE Chatbot, solving the limitation of only being able to send messages to the entire group or a single group."
+      - "Development, design, and implementation of the Kugifood C2M system."
+      - "QS Reputation Survey System for National Taiwan University of Science and Technology."
+  -
+    title: "CIO"
+    subTitle: "Homie Studio Startup"
+    startedAt: "Jun 2020"
+    endedAt: "Jan 2021"
+    highlights:
+      - "Build a SaaS startup with six months."
+      - "Ministry of Economic Aairs /Shooly/750k TWD - Line ChatBot Design competition champion/Shooly/100k TWD"
+      - "Ministry of Education 109U-Start / /350k TWD"
+      - "Ministry of Science and Technology 2020 FITI Top 40/PP-Bank System/50k TWD"
+  -
+    title: "Tutor/TA"
+    subTitle: "N/A"
+    startedAt: "Aug 2021"
+    endedAt: "Apr 2022"
+    highlights:
+      - "Java: Teaching a class with over 50 students."
+      - "Go: Teaching a class with 1 student."
+      - "C++: Teaching a class with 5 students."
+      - "x86 Assembly: Teaching a class with 1 student."
+  -
+    title: "Electrical Engineer"
+    subTitle: "ANIMATE ENGINEERING CO., LTD"
+    startedAt: "Jan 2018"
+    endedAt: "Sep 2019"
+    highlights:
+      - "Assembling teaching materials for KNX smart home based on the 108 curriculum."
+      - "Participating in the smart building project at National Taitung University."
+      - "Participating in the smart home project at Yunlin-Chiayi-Nantou Regional Branch, Ministry of Labor."
+      - "Participating in the smart classroom project at National Hualien Industrial Vocational High School."
+      - "Participating in the smart farm project at Nantou Zhongpu."
+
+achievements:
+  -
+    title: "National Competitor"
+    isFull: false
+    highlights:
+      - "2017 Shanghai WorldSkills Competition Invitational / Interior Wiring / World Gold Medal"
+      - "44th Abu Dhabi WorldSkills Competition / Interior Wiring / World Champion"
+      - "44th WorldSkills Competition / Interior Wiring / National Representative"
+  -
+    title: "Scholarship"
+    isFull: false
+    highlights:
+      - "2021 Foxconn Education Foundation Award"
+      - "2021 Presidential Education Award"
+      - "Cathay Outstanding Scholar Program Special Merit Award"
+      - "2020 NTUST Outstanding college Youth Award"
+  -
+    title: "University Competition"
+    isFull: false
+    highlights:
+      - "2020 National College Intelligent Innovation and Cross-Disciplinary Integration Creation Competition/ Sliver"
+      - "The 13th HIWIN robotic arm Competition"
+  -
+    title: "Tennis Competition"
+    isFull: false
+    highlights:
+      - "7th Place in the 111th National Intercollegiate Tennis Cup Northern Region Team Competition"
+      - "Easyoga Cup Zhongli Station Tennis Grading Tournament 2.5: Singles and Doubles Third Place"
+      - "2nd Breakpoint Tennis Grading Tournament 2.0: Singles Champion"
+  -
+    title: "Speech Experience"
+    isFull: true
+    highlights:
+      - "Coscup / Building 3D Models with Ruby / July 2022"
+      - "Coscup / TechGirl from NTUST / July 2022"
+      - "Delivered 4 speeches on 'Embracing Career with Technical Skills'"
+      - "Invited as a speaker for the Ministry of Labor's Skill Competition Promotion Event 'Rooting Career from the Bottom' / September 2021"
+      - "Invited to speak at the Southern Maker Base on 'Taking an Alternative Path'"
+      - "Invited as a commentator for the 48th National Skill Competition Northern Region Qualifiers in the field of Indoor Electrical Wiring / April 2019"
+      - "Invited as a commentator for the 47th National Skill Competition in the field of Indoor Electrical Wiring / August 2018"
+      - "Invited as a commentator for the 47th National Skill Competition Northern Region Qualifiers in the field of Indoor Electrical Wiring / April 2018"
+
+skillsList:
+    -
+      title: Frontend
+      skills:
+        -
+          name: HTML
+          proficiency: 50
+        -
+          name: CSS
+          proficiency: 70
+        -
+          name: Javascript
+          proficiency: 80
+    -
+      title: Backend
+      skills:
+        -
+          name: Rails
+          proficiency: 80
+        -
+          name: Bash
+          proficiency: 70
+        -
+          name: PostgreSQL
+          proficiency: 80
+    -
+      title: DSL
+      skills:
+        -
+          name: Sketchup
+          proficiency: 50
+        -
+          name: PLC
+          proficiency: 70
+        -
+          name: KNX
+          proficiency: 80
+    -
+      title: Devops
+      skills:
+        -
+          name: Nginx
+          proficiency: 50
+        -
+          name: Git
+          proficiency: 70
+        -
+          name: Docker
+          proficiency: 30

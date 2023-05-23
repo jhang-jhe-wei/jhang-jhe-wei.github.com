@@ -4,9 +4,10 @@ import store, { useAppSelector } from '../reducers/store'
 import { Provider } from 'react-redux'
 import { useEffect } from 'react'
 import Modal from 'react-modal';
+import { appWithTranslation } from 'next-i18next'
 Modal.setAppElement('#__next');
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Provider store={store}>
       <ModeEffect />
@@ -22,3 +23,5 @@ function ModeEffect() {
   }, [mode])
   return null;
 }
+
+export default appWithTranslation(App)

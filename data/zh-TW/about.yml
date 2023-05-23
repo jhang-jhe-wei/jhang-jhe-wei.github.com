@@ -32,7 +32,7 @@ works:
     title: "Part Time"
     subTitle: "愛好資訊科技有限公司"
     startedAt: "二月 2021"
-    endedAt: "Present"
+    endedAt: "七月 2022"
     highlights:
       - 維護讚爾水晶球
       - 維護台灣醒報
@@ -65,14 +65,14 @@ works:
     title: "家教/助教"
     subTitle: "仲介委託/台科大電機系 Java 課程"
     startedAt: "八月 2021"
-    endedAt: "Present"
+    endedAt: "四月 2022"
     highlights:
       - Java：教學人數超過 50 人
       - Go：教學人數 1 人
       - C++：教學人數 5 人
       - x86 Assembly：教學人數 1 人
   -
-    title: "軟硬體工程師"
+    title: "電氣工程師"
     subTitle: "安耐美國際智慧節能科技工程有限公司"
     startedAt: "一月 2018"
     endedAt: "九月 2019"
@@ -109,16 +109,16 @@ achievements:
     title: "網球校隊選手"
     isFull: false
     highlights:
+      - "111 年度全國網球大專盃北區團體賽第 7 名"
       - "Easyoga 盃中壢站網球分級賽 2.5 ：單雙打季軍"
       - "第二屆 Breakpoint 網球分級賽 2.0：單打冠軍"
   -
     title: "演講經驗"
     isFull: true
     highlights:
+      - "演講「技職玩轉人生」4 場"
       - "Coscup / 使用 Ruby 建模吧 / 2022.07"
       - "Coscup / 台科不分系學姊 / 2022.07"
-      - "台北電腦公會邀請至嘉義義竹國中演講「技職玩轉人生」/ 2021.11"
-      - "台北電腦公會邀請至彰化大城國中演講「技職玩轉人生」/ 2021.11"
       - "勞動部技能競賽推廣活動「向下扎根職涯」邀請擔任講師/ 2021.09"
       - "受邀至南方創客基地演講「走一條體制外的路」"
       - "受邀至第48屆全國技能競賽北區分區賽解說室內配線 / 2019.04"

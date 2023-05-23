@@ -1,0 +1,122 @@
+-
+    title: LINE Chatbot-Charity Website
+    tag: Software App
+    image: /images/charity-web.png
+    description: We have gathered all the public welfare activities in Taiwan and provide functions such as search and tracking. The system is implemented using Rails and integrated with LINE Message API and LINE LIFF.
+    demo_link: https://charity-web.dokku.wells.tw/
+    code_link: https://github.com/jhang-jhe-wei/charity-web
+-
+    title: Hochschule Esslingen Course Simulator
+    tag: Software App
+    image: /images/course-simulator.png
+    description:  Hochschule Esslingen Course Selection Simulator is a simulation course selection system developed specifically for Hochschule Esslingen. This system aims to assist students in resolving confusion during the course selection process by providing features such as course selection simulation, course search, and course information. It is implemented using Rails and React.
+    demo_link: https://course-simulator.dokku.wells.tw/
+    code_link: https://github.com/jhang-jhe-wei/HE-application-project
+    highlight: true
+-
+    title: LINE Chatbot-NTUST Senior
+    tag: Software App
+    image: /images/ntust-senior.jpg
+    description: NTUST Senior is a LINE chatbot designed specifically for new non-departmental students at National Taiwan University of Science and Technology (NTUST). Developed by myself to address the confusion faced by non-departmental freshmen every year, this project provides features such as course selection assistance, graduation requirements, and campus announcements. It is implemented using Rails.
+    demo_link: https://line.me/R/ti/p/%40152pnuji
+    code_link: https://github.com/jhang-jhe-wei/NTUST-Senior
+    highlight: true
+-
+    title: Sketchup Rebar Helper Plugin
+    tag: Software App
+    image: /images/rebar-helper.png
+    description: Sketchup is a commonly used 3D modeling software in the architecture industry. For this project, the requirement is to automatically deploy reinforcement within the structural elements. In traditional cases, modelers have to manually calculate and construct sample reinforcement based on the dimensions, layers, and types of reinforcement required for the structural elements. They then repeatedly copy the sample reinforcement to specific locations, which is a repetitive and time-consuming task. With this plugin, however, by inputting parameters, the plugin can directly generate reinforcement that matches the structural elements. It is implemented using Ruby.
+    highlight: true
+-
+    title: Kugifood C2M System
+    tag: Software App
+    image: /images/kugifoods.png
+    description: This project is part of the C2M (Customer-to-Manufacturer) initiative of Kugifood. It involves integrating the ERB (Enterprise Resource Planning) system, recipe analysis, logistics analysis, product and forum web scraping, and precise product guidance. In the web scraping component, the system collects all information related to cereal products from e-commerce platforms (such as Shopee and Rakuten) and forums (PTT, Dcard, etc.). The project is implemented using Rails.
+-
+    title: Shooly technician O2O System
+    tag: Software App
+    image: /images/shooly.png
+    description: Shooly technician O2O System is developed by Homie Studio, with a team from the Artificial Intelligence Laboratory at National Taiwan University of Science and Technology. With the Shooly chatbot, users can easily access nearby technician information and effortlessly request water and electricity services. The platform is implemented using Rails.
+    demo_link: https://youtu.be/MpMFKWOyM7Q
+-
+    title: LINE Chatbot Groups Management System
+    tag: Software App
+    image: /images/line-push-custom.png
+    description: This project aims to create a backend management system for a LINE Chatbot. The system will keep track of groups that have this chatbot and allow the addition of tags to each group. The core functionality of the system is group messaging, where messages can be sent to specific tags or groups. The content of the messages can include text and files. In the case of PDF files, they will be converted to images, watermarked, and then sent to the group chat room. Rails will be used for the implementation of this system.
+-
+    title: Simple BBS
+    tag: Software App
+    image: /images/web-security.png
+    description: This project is a midterm assignment for web security. The objective is to create a bulletin board system without using any frameworks or third-party packages. The system should be able to defend against attacks from other users. For this purpose, I have developed a simple MVC architecture using PHP, and it adheres to the principles of a RESTful API design.
+    demo_link: https://web-security.wells.tw
+    code_link: https://github.com/jhang-jhe-wei/Websecurity-middle-project
+-
+    title: Simple drawing board based on STM32f746g-DISCOVERY
+    tag: Embedded System
+    image: http://i3.ytimg.com/vi/hzKudp6jNWU/hqdefault.jpg
+    description: This project is my internship project for the Embedded Systems course in the second semester of my sophomore year. The development board used for this project is the STM32f746g-DISCOVERY.
+    demo_link: https://youtu.be/hzKudp6jNWU
+    code_link: https://github.com/jhang-jhe-wei/Simple-drawing-board-based-on-STM32f746g-DISCOVERY
+-
+    title: AI handwriting recognition based on STM32f746g-DISCOVERY
+    tag: Embedded System
+    image: http://i3.ytimg.com/vi/0QSbi8sorVI/hqdefault.jpg
+    description: This project is my internship project for the Embedded Systems course in the second semester of my sophomore year. The development board used for this project is the STM32f746g-DISCOVERY.
+    demo_link: https://youtu.be/0QSbi8sorVI
+    code_link: https://github.com/jhang-jhe-wei/AI-handwriting-recognition-based-on-STM32f746g-DISCOVERY
+-
+    title: Fast Fourier transform using microphone in STM32f746g-DISCOVERY
+    tag: Embedded System
+    image: http://i3.ytimg.com/vi/NJCQbo03_Y8/hqdefault.jpg
+    description: This project is my internship project for the Embedded Systems course in the second semester of my sophomore year. The development board used for this project is the STM32f746g-DISCOVERY.
+    demo_link: https://youtu.be/NJCQbo03_Y8
+    code_link: https://github.com/jhang-jhe-wei/Fast-Fourier-transform-using-microphone-in-STM32f746g-DISCOVERY
+-
+    title: Using user button control LCD/LED in STM32f746g-DISCOVERY
+    tag: Embedded System
+    image: http://i3.ytimg.com/vi/cr1C7mOcJQ0/hqdefault.jpg
+    description: This project is my internship project for the Embedded Systems course in the second semester of my sophomore year. The development board used for this project is the STM32f746g-DISCOVERY.
+    demo_link: https://youtu.be/cr1C7mOcJQ0
+    code_link: https://github.com/jhang-jhe-wei/Using-user-button-control-LCD-LED-in-STM32f746g-DISCOVERY
+-
+    title: Java Star War
+    tag: Game
+    image: /images/star-war.png
+    description: This project is my final project for the Computer Programming and Applications course in the first semester of my freshman year. It was developed using Java.
+    demo_link: https://www.youtube.com/watch?v=bRKvdPA267w
+    code_link: https://github.com/jhang-jhe-wei/Star-Wars
+-
+    title: Plants vs.Zombies by x86 Assembly language
+    tag: Game
+    image: /images/Plants-vs-Zombies.png
+    description: This project is my final project for the Microcomputer Principles course in the second semester of my sophomore year. It was developed using the Masm assembler for Windows XP.
+    demo_link: https://www.youtube.com/watch?v=6KKGQbUG51k
+    code_link: https://github.com/jhang-jhe-wei/Plants-vs.-Zombies-by-x86-Assembly-language
+-
+    title: C++ Monopoly
+    tag: Game
+    image: /images/Monopoly.png
+    description: This project is my final project for the Object-Oriented Programming course in the second semester of my freshman year. It was a group project with four members, and my teammate and I were responsible for the back-end logic. The project was implemented and operated entirely on the console interface.
+    demo_link: https://youtu.be/u2GF4X78HGw
+    code_link: https://github.com/jhang-jhe-wei/Monopoly
+-
+    title: C++ ChineseChess
+    tag: Game
+    image: /images/Chinese-chess.png
+    description: This project is my midterm project for the Object-Oriented Programming course in the second semester of my freshman year. It was a group project with four members, and my teammate and I were responsible for the back-end logic. The project was implemented and operated entirely on the console interface. In addition to the basic functionality of Chinese chess rules, it also includes features such as real-time game status and the ability to undo moves. Please refer to the video below for the actual gameplay.
+    demo_link: https://youtu.be/ccETgxwJvMs
+    code_link: https://github.com/jhang-jhe-wei/ChineseChess
+-
+    title: Minisweeper
+    tag: Game
+    image: /images/minesweeper.png
+    description: This is a minesweeper game project that I worked on, which includes three different-sized game boards. The project was implemented using React.
+    demo_link: https://react-minesweep.wells.tw/
+    code_link: https://github.com/jhang-jhe-wei/react-minesweep
+-
+    title: Hexapod Bionic Robot
+    tag: Embedded System
+    image: http://i3.ytimg.com/vi/jO4WLPvJ7fM/hqdefault.jpg
+    description: This project is a reconnaissance robot designed for exploring indoor spaces and surveying partially collapsed buildings. To adapt to complex terrains, we chose a hexapod robot as the base, which offers greater advantages in overcoming terrain obstacles despite its slower movement speed compared to wheeled robots. The project utilizes reinforcement learning techniques to simulate various terrains on a computer, enabling the robot to automatically adjust its movement patterns based on the terrain. When used in disaster relief scenarios, the robot provides valuable insights into the interior of collapsed buildings. We have equipped the robot with an optical radar to collect data and generate a point cloud representation of the entire space. Additionally, for easier location of trapped individuals, the robot is equipped with a camera that utilizes YOLOv4 for real-time image recognition, facilitating search and rescue operations.
+    demo_link: https://youtu.be/jO4WLPvJ7fM
+    highlight: true

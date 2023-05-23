@@ -3,8 +3,21 @@ import Signboard from '../components/landing/signboard'
 import PipelineDiagram from '../components/landing/pipeline_diagram'
 import Footer from '../components/landing/footer'
 import Layout from '../components/layout'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { i18n } from '../next-i18next.config'
+import { useAppDispatch } from '../reducers/store'
+import { changeLanguage } from '../reducers/locale_slice'
+import { useEffect } from 'react'
 
-export default function Home():React.ReactElement {
+interface HomeProps {
+  locale: typeof i18n.locales[number];
+}
+
+export default function Home({ locale }: HomeProps):React.ReactElement {
+  const dispatch = useAppDispatch();
+  useEffect(()=>{
+    dispatch(changeLanguage(locale))
+  }, [])
   return (
     <>
       <div className="bg-[length:40px_40px] bg-grid-dark dark:bg-grid-light min-h-screen">
@@ -34,4 +47,15 @@ export default function Home():React.ReactElement {
       </div>
     </>
   )
+}
+
+export const getStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      locale,
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
+    },
+  }
 }
