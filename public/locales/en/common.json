@@ -12,9 +12,9 @@
     "achievements": "Achievements",
     "skills": "Skills"
   },
-  "achievementCount": "Number of Medals Achieved",
-  "projectCount": "Number of Completed Projects",
-  "customerCount": "Number of Customers",
+  "achievementCount": "Achievements",
+  "projectCount": "Projects",
+  "customerCount": "Customers",
   "nickNameIs": "Nickname: {{nickName}}",
   "locatedIn": "Location: Taipei",
   "self-intro": "I'm Wells, a former national champion in indoor wiring. After conquering the electrical field, I'm now expanding my horizons into the realm of information technology."
