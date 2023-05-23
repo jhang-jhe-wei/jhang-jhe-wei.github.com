@@ -2,14 +2,14 @@
     title: LINE 聊天機器人—公民益點通
     tag: 軟體系統
     image: /images/charity-web.png
-    description: 搜集了全台所有公益活動的系統，主體為聊天機器人，可依地點和時間查詢相關的公益活動
+    description: 搜集了全台所有公益活動並提供查詢和追蹤等功能，使用 Rails 實作，並搭配 LINE Message API 和 LINE LIFF。
     demo_link: https://charity-web.dokku.wells.tw/
     code_link: https://github.com/jhang-jhe-wei/charity-web
 -
     title: Hochschule Esslingen 選課模擬系統
     tag: 軟體系統
     image: /images/course-simulator.png
-    description: 「Hochschule Esslingen 選課模擬系統」是一個專為Hochschule Esslingen 學校開發的模擬選課系統。該系統旨在幫助學生解決選課時的困惑，提供選課模擬、課程搜尋和課程資訊等功能。
+    description: 「Hochschule Esslingen 選課模擬系統」是一個專為Hochschule Esslingen 學校開發的模擬選課系統。該系統旨在幫助學生解決選課時的困惑，提供選課模擬、課程搜尋和課程資訊等功能。使用 Rails 和 React 實作。
     demo_link: https://course-simulator.dokku.wells.tw/
     code_link: https://github.com/jhang-jhe-wei/HE-application-project
     highlight: true
@@ -17,7 +17,7 @@
     title: LINE 聊天機器人—台科不分系學姊
     tag: 軟體系統
     image: /images/ntust-senior.jpg
-    description: 「台科不分系學姊」是一款專為台科全校不分系新生製作的 LINE 聊天機器人，為了解決每年全校不分系新生入學時的困惑，因此由本人主動發想、設計並完成此專案，目前提供選課解答、畢業條件和校內大小事通知等功能。
+    description: 「台科不分系學姊」是一款專為台科全校不分系新生製作的 LINE 聊天機器人，為了解決每年全校不分系新生入學時的困惑，因此由本人主動發想、設計並完成此專案，目前提供選課解答、畢業條件和校內大小事通知等功能。使用 Rails 實作。
     demo_link: https://line.me/R/ti/p/%40152pnuji
     code_link: https://github.com/jhang-jhe-wei/NTUST-Senior
     highlight: true
@@ -25,29 +25,29 @@
     title: Sketchup Rebar Helper Plugin
     tag: 軟體系統
     image: /images/rebar-helper.png
-    description: Sketchup 是建築界常用的 3D 建模軟體，此案的需求為結構體內自動部屬鋼筋，傳統情況下，建模者須依照結構體尺寸、包層和鋼筋種類建計算出並手動建置樣本鋼筋，之後不斷複製樣本鋼筋到特地位置，工作內容十分重複且費時，使用此插件後，藉由輸入參數，便可直接產生出相符於結構體的鋼筋。
+    description: Sketchup 是建築界常用的 3D 建模軟體，此案的需求為結構體內自動部屬鋼筋，傳統情況下，建模者須依照結構體尺寸、包層和鋼筋種類建計算出並手動建置樣本鋼筋，之後不斷複製樣本鋼筋到特地位置，工作內容十分重複且費時，使用此插件後，藉由輸入參數，便可直接產生出相符於結構體的鋼筋。使用 Ruby 。
     highlight: true
 -
     title: 廣吉系統
     tag: 軟體系統
     image: /images/kugifoods.png
-    description: 此專案是廣吉食品的 C2M 計畫，整合 ERB 系統、配方分析、物流分析、商品與論爬蟲和精準導購。在爬蟲部分可以搜集電商（如蝦皮、樂天）和論壇（PTT、Dcard）有關於麥片商品的所有資訊。
+    description: 此專案是廣吉食品的 C2M 計畫，整合 ERB 系統、配方分析、物流分析、商品與論爬蟲和精準導購。在爬蟲部分可以搜集電商（如蝦皮、樂天）和論壇（PTT、Dcard）有關於麥片商品的所有資訊。使用 Rails 。
 -
     title: Shooly 水電資訊媒合平台
     tag: 軟體系統
     image: /images/shooly.png
-    description: 「Shooly-水電媒合平台」是由Homie Studio 毫米隧道所開發，團隊來自臺灣科技大學人工智慧實驗室。 透過Shooly 聊天機器人，一頁掌握附近技師資訊，讓您輕鬆呼叫水電零負擔。
+    description: 「Shooly-水電媒合平台」是由Homie Studio 毫米隧道所開發，團隊來自臺灣科技大學人工智慧實驗室。 透過Shooly 聊天機器人，一頁掌握附近技師資訊，讓您輕鬆呼叫水電零負擔。使用 Rails 。
     demo_link: https://youtu.be/MpMFKWOyM7Q
 -
     title: 聊天機器人群組管理系統
     tag: 軟體系統
     image: /images/line-push-custom.png
-    description: 此案的需求為建立一個 LINE Chatbot 後台管理系統，此後台會記錄含有此機器人的群組，可為每個群組加上標籤，核心功能為群發，可指定標籤及群組，傳送內容包含文字和檔案，若傳送檔案為pdf，會轉換成圖片後加上浮水印再傳至群組聊天室。
+    description: 此案的需求為建立一個 LINE Chatbot 後台管理系統，此後台會記錄含有此機器人的群組，可為每個群組加上標籤，核心功能為群發，可指定標籤及群組，傳送內容包含文字和檔案，若傳送檔案為pdf，會轉換成圖片後加上浮水印再傳至群組聊天室。使用 Rails 。
 -
     title: 留言板系統
     tag: 軟體系統
     image: /images/web-security.png
-    description: 此作品是網頁安全的期中作業，在不使用任何框架和第三方套件的前提下製作一個留言板系統，並需要防禦其他人的攻擊，在其中本人製作了一個簡易的 MVC 架構，並且符合 Restful API 的設計原則。
+    description: 此作品是網頁安全的期中作業，在不使用任何框架和第三方套件的前提下製作一個留言板系統，並需要防禦其他人的攻擊，在其中本人製作了一個簡易的 MVC 架構，並且符合 Restful API 的設計原則。使用 Rails 。
     demo_link: https://web-security.wells.tw
     code_link: https://github.com/jhang-jhe-wei/Websecurity-middle-project
 -
@@ -115,7 +115,7 @@
     code_link: https://github.com/jhang-jhe-wei/ChineseChess
 -
     title: 泛用環境偵察機 Save Impossible
-    tag: 機器人
+    tag: 嵌入式系統
     image: http://i3.ytimg.com/vi/jO4WLPvJ7fM/hqdefault.jpg
     description: 本作品為一偵察機器人，此機器人可用於探索室內空間及偵查未完全倒塌的建築物，為了使其適應複雜的地形，我們選用六足機器人當作基底，儘管比起輪軸機器人移動速度較緩慢，但是在克服地形障礙上有更大的優勢。本作品利用強化學習 (Reinforcement Learning) 在電腦上模擬各種地形，使機器人在行走時可以自動依照地形變換動作模式。若將此作品用於救災，可使救災者更加了解倒塌建築物的內部情況，我們在機器人上加裝光學雷達，只要收集足夠的數據就可以產生點雲（point cloud）描繪出整個空間的樣貌，且為了使受困者更加容易被找尋到，本機器人也加裝了攝影機，利用 YOLOv4 達到即時影像辨識將能使搜救更加容易。
     demo_link: https://youtu.be/jO4WLPvJ7fM
