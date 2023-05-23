@@ -1,6 +1,6 @@
 import SocialMediaList from "../social_media_list/social_media_list"
 import profileImg from '../../public/images/profile.png'
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "next-i18next"
 
 export default function profoilo():React.ReactElement {
   const { t } = useTranslation();
