@@ -18,6 +18,7 @@ import { i18n } from '../next-i18next.config'
 import { useAppDispatch } from '../reducers/store'
 import { changeLanguage } from '../reducers/locale_slice'
 import { useEffect } from 'react'
+import { useTranslation } from 'next-i18next'
 
 interface AboutProps {
     education: ListItemProps[];
@@ -33,12 +34,13 @@ export default function about({education, works, achievements, skillsList, proje
   useEffect(()=>{
     dispatch(changeLanguage(locale))
   }, [])
+  const { t } = useTranslation()
 
   return (
     <Layout>
       <div className="container mx-auto">
-        <Head><title>Wells 的經歷</title></Head>
-        <h1 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">About</h1>
+        <Head><title>{t('aboutme')}</title></Head>
+        <h1 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">{t('about')}</h1>
         <Toc/>
         <Profile/>
         <div className="mt-56 print:mt-14">

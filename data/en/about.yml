@@ -1,128 +1,131 @@
 education:
   -
-    title: National Taiwan University of Science and Technology
-    subTitle: "應用科技學士學位學程"
+    title: NTUST
+    subTitle: Bachelor Degree Program of Applied Science and Technology
     startedAt: "2018"
     endedAt: "2022"
     highlights:
-      - "2021 總統教育獎優秀學生獎"
-      - Club Master of Interdisciplinary Student Association
-      - "網球校隊隊員"
+      - "2021 President Educational Award"
+      - "Student Club Master"
+      - "Tennis varsity member"
   -
-    title: "花蓮高工"
-    subTitle: "電機科"
+    title: "National Hualien Industrial Vocational Senior High School"
+    subTitle: "Electrical Engineering"
     startedAt: "2014"
     endedAt: "2017"
     highlights:
-      - "第 44 屆國際技能競賽電氣裝配世界優勝"
-      - "第 44 屆國際技能競賽電氣裝配國手"
-      - "第 46 屆全國技能競賽電氣裝配金牌"
+      - "The 44th WorldSkills Abu Dhabi 2017 Medallion for Excellence"
+      - "The 44th WorldSkills Abu Dhabi 2017 National Competitor"
+      - "The 46th National Skills Competition Golden"
 
 works:
   -
-    title: "工程師"
+    title: "Software Engineer"
     subTitle: "Cyberbiz"
-    startedAt: "七月 2022"
+    startedAt: "Jul 2022"
     endedAt: "Present"
+    highlights:
+      - "Implementing automated testing in the LINE group buying system."
+      - "Upgrading the E-Tag feature."
+      - "Implementing the SMS reservation feature."
   -
     title: "Part Time"
-    subTitle: "愛好資訊科技有限公司"
-    startedAt: "二月 2021"
-    endedAt: "Present"
+    subTitle: "AIHAO"
+    startedAt: "Feb 2021"
+    endedAt: "Jul 2022"
     highlights:
-      - 維護讚爾水晶球
-      - 維護台灣醒報
-      - 維護 AlphaCamp Lighthouse
-      - 升級 RubyJobs 網站
-      - 開發網站監測系統(uptime.tw)
+      - Maintaining 讚爾水晶球
+      - Maintaining 台灣醒報
+      - Maintaining AlphaCamp Lighthouse
+      - Upgrading RubyJobs website
+      - "Developing website monitoring system (uptime.tw)"
   -
     title: "Free Lancer"
-    subTitle: "MYSELF"
-    startedAt: "一月 2019"
+    subTitle: "N/A"
+    startedAt: "Jan 2019"
     endedAt: "Present"
     highlights:
-      - Sketchup 3D 鋼筋智慧建模插件，減少建築師 90% 鋼筋建模時間成本
-      - LINE Chatbot 客製化群組推播系統，解決只能全群或單群發送的限制
-      - 廣吉食品C2M 系統開發設計與建置
-      - 台科大 QS 聲譽系統
+      - Sketchup 3D Reinforcement Intelligent Modeling Plugin, reducing 90% of the architect's rebar modeling time and cost.
+      - Customized Group Push System for LINE Chatbot, solving the limitation of only being able to send messages to the entire group or a single group.
+      - Development, design, and implementation of the Kugifood C2M system.
+      - QS Reputation Survey System for National Taiwan University of Science and Technology.
   -
-    title: "資訊長"
-    subTitle: "毫米隧道科技股份有限公司"
-    startedAt: "六月 2020"
-    endedAt: "一月 2021"
+    title: "CIO"
+    subTitle: "Homie Studio Startup"
+    startedAt: "Jun 2020"
+    endedAt: "Jan 2021"
     highlights:
-      - "本人與學長姐一同創立的新創公司"
-      - "在半年內募得百萬創業獎金"
-      - "經濟部創業歸故里數位應用獎/ Shooly 水電資訊媒合平台/ 75 萬創業獎金"
-      - "Line ChatBot 設計大賽冠軍/ Shooly 水電資訊媒合平台/ 10 萬獎金"
-      - "教育部 109 U-Start 第一階段入圍/ PP-Bank 子母帳戶系統/ 35 萬創業獎金"
-      - "科技部 2020 FITI 全國前 40 名/ PP-Bank 子母帳戶系統/ 5 萬創業獎金"
+      - "Build a SaaS startup with six months."
+      - "Ministry of Economic Aairs /Shooly/750k TWD - Line ChatBot Design competition champion/Shooly/100k TWD"
+      - "Ministry of Education 109U-Start / /350k TWD"
+      - "Ministry of Science and Technology 2020 FITI Top 40/PP-Bank System/50k TWD"
   -
-    title: "家教/助教"
-    subTitle: "仲介委託/台科大電機系 Java 課程"
-    startedAt: "八月 2021"
-    endedAt: "Present"
+    title: "Tutor/TA"
+    subTitle: "N/A"
+    startedAt: "Aug 2021"
+    endedAt: "Apr 2022"
     highlights:
-      - Java：教學人數超過 50 人
-      - Go：教學人數 1 人
-      - C++：教學人數 5 人
-      - x86 Assembly：教學人數 1 人
+      - Java: Teaching a class with over 50 students.
+      - Go: Teaching a class with 1 student.
+      - C++: Teaching a class with 5 students.
+      - x86 Assembly: Teaching a class with 1 student.
   -
-    title: "軟硬體工程師"
-    subTitle: "安耐美國際智慧節能科技工程有限公司"
-    startedAt: "一月 2018"
-    endedAt: "九月 2019"
+    title: "Electrical Engineer"
+    subTitle: "ANIMATE ENGINEERING CO., LTD"
+    startedAt: "Jan 2018"
+    endedAt: "Sep 2019"
     highlights:
-      - 裝配 108 課綱KNX智慧居家教材
-      - 參與國立臺東大學智慧建案
-      - 參與勞動力勞動部雲嘉南分署智慧屋建案
-      - 參與國立花蓮高工智慧教室建案
-      - 參與南投中埔智慧農場建案
+      - "Assembling teaching materials for KNX smart home based on the 108 curriculum."
+      - "Participating in the smart building project at National Taitung University."
+      - "Participating in the smart home project at Yunlin-Chiayi-Nantou Regional Branch, Ministry of Labor."
+      - "Participating in the smart classroom project at National Hualien Industrial Vocational High School."
+      - "Participating in the smart farm project at Nantou Zhongpu."
 
 achievements:
   -
-    title: Worldskills Competitor
+    title: "National Competitor"
     isFull: false
     highlights:
-      - "2017 上海國際技能競賽邀請賽 / 室內配線 / 世界金牌"
-      - " 第 44 屆阿布達比國際技能競賽 / 室內配線 / 世界優勝 "
-      - "第 44 屆國際技能競賽 / 室內配線 / 國手"
+      - "2017 Shanghai WorldSkills Competition Invitational / Interior Wiring / World Gold Medal"
+      - "44th Abu Dhabi WorldSkills Competition / Interior Wiring / World Champion"
+      - "44th WorldSkills Competition / Interior Wiring / National Representative"
   -
-    title: Scholarship Award
+    title: "Scholarship"
     isFull: false
     highlights:
-      - 2021 Foxconn Education Scholarship Winner
-      - 2021 Ministry of Education Presidential Education Award/Secondary Award
-      - 2020 Cathaylife Excellence Scholarship Winner
-      - 2020 NTUST Appied Science and Technology Excellence Student Winner
+      - "2021 Foxconn Education Foundation Award"
+      - "2021 Presidential Education Award"
+      - "Cathay Outstanding Scholar Program Special Merit Award"
+      - "2020 NTUST Outstanding college Youth Award"
   -
-    title: Technology Award
+    title: "University Competition"
     isFull: false
     highlights:
-      - Silver medal in the 2020 National Colleges and Universities Smart Innovation and Cross-domain Integration Creation Competition
-      - Champion of the 13th HIWIN Smart Robot Hand Competition
+      - "2020 全國大專校院智慧創新暨跨域整合創作競賽/ Sliver"
+      - "The 13th HIWIN robotic arm Competition"
   -
-    title: Tennis Varsity Members
+    title: "Tennis Competition"
     isFull: false
     highlights:
-      - Shortlisted for the National University Tennis Games
-      - NTRP 2.5 Singles/Doubles Bronze Medal of Easyoga Tennis Competition
-      - NTRP 2.0 Singles Champion of the 2nd Breakpoint Tennis Competition
+      - "7th Place in the 111th National Intercollegiate Tennis Cup Northern Region Team Competition"
+      - "Easyoga Cup Zhongli Station Tennis Grading Tournament 2.5: Singles and Doubles Third Place"
+      - "2nd Breakpoint Tennis Grading Tournament 2.0: Singles Champion"
   -
-    title: "演講經驗"
+    title: "Speech Experience"
     isFull: true
     highlights:
-      - "台北電腦公會邀請至嘉義義竹國中演講「技職玩轉人生」/ 2021.11"
-      - "台北電腦公會邀請至彰化大城國中演講「技職玩轉人生」/ 2021.11"
-      - "勞動部技能競賽推廣活動「向下扎根職涯」邀請擔任講師/ 2021.09"
-      - "受邀至南方創客基地演講「走一條體制外的路」"
-      - "受邀至第48屆全國技能競賽北區分區賽解說室內配線 / 2019.04"
-      - "受邀至第47屆全國技能競賽解說室內配線 / 2018.08"
-      - "受邀至第47屆全國技能競賽北區分區賽解說室內配線 / 2018.04"
+      - "Delivered 4 speeches on 'Embracing Career with Technical Skills'"
+      - "Coscup / Building 3D Models with Ruby / July 2022"
+      - "Coscup / TechGirl from NTUST / July 2022"
+      - "Invited as a speaker for the Ministry of Labor's Skill Competition Promotion Event 'Rooting Career from the Bottom' / September 2021"
+      - "Invited to speak at the Southern Maker Base on 'Taking an Alternative Path'"
+      - "Invited as a commentator for the 48th National Skill Competition Northern Region Qualifiers in the field of Indoor Electrical Wiring / April 2019"
+      - "Invited as a commentator for the 47th National Skill Competition in the field of Indoor Electrical Wiring / August 2018"
+      - "Invited as a commentator for the 47th National Skill Competition Northern Region Qualifiers in the field of Indoor Electrical Wiring / April 2018"
 
 skillsList:
     -
-      title: 網站前端
+      title: Frontend
       skills:
         -
           name: HTML
@@ -134,7 +137,7 @@ skillsList:
           name: Javascript
           proficiency: 80
     -
-      title: 網站後端
+      title: Backend
       skills:
         -
           name: Rails
@@ -169,5 +172,3 @@ skillsList:
         -
           name: Docker
           proficiency: 30
-
-
