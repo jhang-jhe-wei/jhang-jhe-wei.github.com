@@ -1,7 +1,21 @@
 {
+  "name": "JHE-WEI, JHANG",
   "portfolio": "Portfolio",
   "about": "About",
   "blog": "Blog",
   "contact": "Contact Me",
-  "aboutme": "Wells's Experience"
+  "aboutme": "Wells's Experience",
+  "anchors": {
+    "profile": "Profile",
+    "education": "Education",
+    "works": "Works",
+    "achievements": "Achievements",
+    "skills": "Skills"
+  },
+  "achievementCount": "Number of Medals Achieved",
+  "projectCount": "Number of Completed Projects",
+  "customerCount": "Number of Customers",
+  "nickNameIs": "Nickname: {{nickName}}",
+  "locatedIn": "Location: Taipei",
+  "self-intro": "I'm Wells, a former national champion in indoor wiring. After conquering the electrical field, I'm now expanding my horizons into the realm of information technology."
 }

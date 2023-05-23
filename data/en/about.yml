@@ -34,10 +34,10 @@ works:
     startedAt: "Feb 2021"
     endedAt: "Jul 2022"
     highlights:
-      - Maintaining 讚爾水晶球
-      - Maintaining 台灣醒報
-      - Maintaining AlphaCamp Lighthouse
-      - Upgrading RubyJobs website
+      - "Maintaining 讚爾水晶球"
+      - "Maintaining 台灣醒報"
+      - "Maintaining AlphaCamp Lighthouse"
+      - "Upgrading RubyJobs website"
       - "Developing website monitoring system (uptime.tw)"
   -
     title: "Free Lancer"
@@ -45,10 +45,10 @@ works:
     startedAt: "Jan 2019"
     endedAt: "Present"
     highlights:
-      - Sketchup 3D Reinforcement Intelligent Modeling Plugin, reducing 90% of the architect's rebar modeling time and cost.
-      - Customized Group Push System for LINE Chatbot, solving the limitation of only being able to send messages to the entire group or a single group.
-      - Development, design, and implementation of the Kugifood C2M system.
-      - QS Reputation Survey System for National Taiwan University of Science and Technology.
+      - "Sketchup 3D Reinforcement Intelligent Modeling Plugin, reducing 90% of the architect's rebar modeling time and cost."
+      - "Customized Group Push System for LINE Chatbot, solving the limitation of only being able to send messages to the entire group or a single group."
+      - "Development, design, and implementation of the Kugifood C2M system."
+      - "QS Reputation Survey System for National Taiwan University of Science and Technology."
   -
     title: "CIO"
     subTitle: "Homie Studio Startup"
@@ -65,10 +65,10 @@ works:
     startedAt: "Aug 2021"
     endedAt: "Apr 2022"
     highlights:
-      - Java: Teaching a class with over 50 students.
-      - Go: Teaching a class with 1 student.
-      - C++: Teaching a class with 5 students.
-      - x86 Assembly: Teaching a class with 1 student.
+      - "Java: Teaching a class with over 50 students."
+      - "Go: Teaching a class with 1 student."
+      - "C++: Teaching a class with 5 students."
+      - "x86 Assembly: Teaching a class with 1 student."
   -
     title: "Electrical Engineer"
     subTitle: "ANIMATE ENGINEERING CO., LTD"
@@ -101,7 +101,7 @@ achievements:
     title: "University Competition"
     isFull: false
     highlights:
-      - "2020 全國大專校院智慧創新暨跨域整合創作競賽/ Sliver"
+      - "2020 National College Intelligent Innovation and Cross-Disciplinary Integration Creation Competition/ Sliver"
       - "The 13th HIWIN robotic arm Competition"
   -
     title: "Tennis Competition"
@@ -114,9 +114,9 @@ achievements:
     title: "Speech Experience"
     isFull: true
     highlights:
-      - "Delivered 4 speeches on 'Embracing Career with Technical Skills'"
       - "Coscup / Building 3D Models with Ruby / July 2022"
       - "Coscup / TechGirl from NTUST / July 2022"
+      - "Delivered 4 speeches on 'Embracing Career with Technical Skills'"
       - "Invited as a speaker for the Ministry of Labor's Skill Competition Promotion Event 'Rooting Career from the Bottom' / September 2021"
       - "Invited to speak at the Southern Maker Base on 'Taking an Alternative Path'"
       - "Invited as a commentator for the 48th National Skill Competition Northern Region Qualifiers in the field of Indoor Electrical Wiring / April 2019"
