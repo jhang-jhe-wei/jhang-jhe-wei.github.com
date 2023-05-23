@@ -8,15 +8,24 @@ import { getPortfolioData } from '../lib/portfolio'
 import { useRouter } from 'next/router'
 import {useTranslation} from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { i18n } from '../next-i18next.config'
+import { useAppDispatch } from '../reducers/store'
+import { changeLanguage } from '../reducers/locale_slice'
+import { useEffect } from 'react'
 
 interface PortfolioProps {
   projects: Project[];
   tags: string[];
+  locale: typeof i18n.locales[number];
 }
 
-export default function Portfolio({ projects, tags }: PortfolioProps): React.ReactElement {
+export default function Portfolio({ projects, tags, locale }: PortfolioProps): React.ReactElement {
   const queryTag = getQueryTag() || tags[0];
   const { t } = useTranslation()
+  const dispatch = useAppDispatch();
+  useEffect(()=>{
+    dispatch(changeLanguage(locale))
+  }, [])
 
   return (
     <Layout>
@@ -32,13 +41,14 @@ export default function Portfolio({ projects, tags }: PortfolioProps): React.Rea
   )
 }
 
-export const getStaticProps: GetStaticProps<PortfolioProps> = async ({locale}) => {
+export const getStaticProps: GetStaticProps = async ({locale}) => {
   const projects: Project[] = await getPortfolioData()
   const tags = Array.from(new Set(projects.map(project => project.tag)));
   return {
     props: {
       projects,
       tags,
+      locale,
       ...(await serverSideTranslations(locale, [
         'common',
       ])),
