@@ -10,7 +10,8 @@
     "education": "Education",
     "works": "Works",
     "achievements": "Achievements",
-    "skills": "Skills"
+    "skills": "Skills",
+    "projects": "Projects"
   },
   "achievementCount": "Achievements",
   "projectCount": "Projects",

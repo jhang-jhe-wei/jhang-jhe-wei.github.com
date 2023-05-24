@@ -10,7 +10,8 @@
     "education": "教育背景",
     "works": "工作經驗",
     "achievements": "獲獎成就",
-    "skills": "技能"
+    "skills": "技能",
+    "projects": "專案"
   },
   "achievementCount": "獲得獎牌數",
   "projectCount": "完成專案數",
