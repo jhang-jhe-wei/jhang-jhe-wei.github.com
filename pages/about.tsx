@@ -44,9 +44,9 @@ export default function about({education, works, achievements, skillsList, proje
         <Toc/>
         <Profile/>
         <div className="mt-56 print:mt-14">
-          <List id="education" category="教育背景" backgroundText="Education Background" data={education} />
-          <List id="works" category="工作經驗" backgroundText="Work Experience" data={works} />
-          <List category="獲獎成就" data={achievements} styleName="hidden print:grid" />
+          <List id="education" category="education" backgroundText="Education Background" data={education} />
+          <List id="works" category="works" backgroundText="Work Experience" data={works} />
+          <List category="achievements" data={achievements} styleName="hidden print:grid" />
         </div>
       </div>
       <Achievements data={achievements}/>

@@ -6,10 +6,10 @@
   "contact": "聯絡我",
   "aboutme": "Wells 的經歷",
   "anchors": {
-    "profile": "自我介紹", 
-    "education": "教育背景", 
-    "works": "工作經驗", 
-    "achievements": "得獎紀錄", 
+    "profile": "自我介紹",
+    "education": "教育背景",
+    "works": "工作經驗",
+    "achievements": "獲獎成就",
     "skills": "技能"
   },
   "achievementCount": "獲得獎牌數",
