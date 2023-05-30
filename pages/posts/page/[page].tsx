@@ -1,10 +1,10 @@
 import { GetStaticProps } from 'next'
-import Layout from '../../components/layout'
-import Pagination from '../../components/pagination';
+import Layout from '../../../components/layout'
+import Pagination from '../../../components/pagination';
 
-import * as posts from '../../lib/posts';
-import type { Post } from '../../lib/posts';
-import PostCard from '../../components/blog/PostCard';
+import * as posts from '../../../lib/posts';
+import type { Post } from '../../../lib/posts';
+import PostCard from '../../../components/blog/PostCard';
 
 interface PostsPageProps {
   totalPage: number;
