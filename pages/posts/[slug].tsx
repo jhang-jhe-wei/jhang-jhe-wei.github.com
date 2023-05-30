@@ -2,15 +2,9 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { GetStaticProps } from 'next'
 import Layout from '../../components/layout'
-
 import * as posts from '../../lib/posts';
-import type { Post } from '../../lib/posts';
 
-interface PostPageProps {
-  post: Post
-}
-
-export default function PostsPage({ post }: PostPageProps): React.ReactElement {
+export default function Post({ post }): React.ReactElement {
   return (
     <Layout>
       hello {JSON.stringify({ title: post.options.title })}
@@ -28,7 +22,7 @@ export default function PostsPage({ post }: PostPageProps): React.ReactElement {
   )
 }
 
-export const getStaticProps: GetStaticProps<PostPageProps> = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const post = await posts.postDetail(context.params.slug as string);
 
   console.log(post)

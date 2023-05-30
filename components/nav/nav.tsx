@@ -22,7 +22,7 @@ export default function Nav():React.ReactElement{
         <div className="items-center hidden sm:flex">
           <NavItem href="/portfolio">{t('portfolio')}</NavItem>
           <NavItem href="/about">{t('about')}</NavItem>
-          <NavItem href="https://blog.wells.tw" newTab={true} >{t('blog')}</NavItem>
+          <NavItem href="/posts/page/1">{t('blog')}</NavItem>
           <NavBtnItem href="mailto:jhang0912407249@gmail.com">{t('contact')}</NavBtnItem>
           <NavLanguage/>
           <NavIconItem/>

@@ -6,10 +6,8 @@ export default function NavItem(props:NavItemProps):React.ReactElement{
       <Link
         href={props.href}
         className="text-primary dark:text-white dark:hover:text-secondary hover:text-secondary"
-        target={props.newTab && "_blank"}>
-
+      >
         {props.children}
-
       </Link>
     </div>
   );

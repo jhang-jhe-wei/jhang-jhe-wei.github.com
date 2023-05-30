@@ -91,14 +91,15 @@ export const postDetail = async (slug: string) => {
   return { slug, filename, options, content };
 };
 
-export const genIndexPaths = async () => (
-  Array(await totalPages()).fill(null).map(
-    (_, page) => (page + 1).toString()
-  ).map(
-    (page) => (
-      { params: { page } }
-    ),
-  )
-);
+export const genIndexPaths = async (locales: string[]) => {
+  const paths = [];
+  const pages = await totalPages();
+  for (const locale of locales) {
+    for (let page = 1; page <= pages; page++) {
+      paths.push({ params: { page: page.toString() }, locale });
+    }
+  }
+  return paths;
+};
 
 export { genQuery, genLinkProps, parseQuery };

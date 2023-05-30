@@ -12,26 +12,34 @@ export default function NavMobileMenu({reveal}) {
             </Link>
           </li>
           <li className="mt-16">
-            <Link href="/portfolio" className="text-xl text-white hover:no-underline">
+            <Link
+              href="/portfolio"
+              className="text-xl text-white hover:no-underline"
+              legacyBehavior>
               {t('portfolio')}
             </Link>
           </li>
           <li className="mt-4">
-            <Link href="/about" className="text-xl text-white hover:no-underline">
+            <Link
+              href="/about"
+              className="text-xl text-white hover:no-underline"
+              legacyBehavior>
               {t('about')}
             </Link>
           </li>
           <li className="mt-4">
             <Link
-              href="https://blog.wells.tw"
-              className="text-xl text-white hover:no-underline">
+              href="/posts/page/1"
+              className="text-xl text-white hover:no-underline"
+              legacyBehavior>
               {t('blog')}
             </Link>
           </li>
           <li className="mt-16">
             <Link
               href="mailto:jhang0912407249@gmail.com"
-              className={`border border-secondary text-white px-5 pt-3 pb-2 rounded-[10px] bg-secondary dark:hover:border-primary hover:bg-white hover:text-secondary hover:no-underline`}>
+              className={`border border-secondary text-white px-5 pt-3 pb-2 rounded-[10px] bg-secondary dark:hover:border-primary hover:bg-white hover:text-secondary hover:no-underline`}
+              legacyBehavior>
               {t('contact')}
             </Link>
           </li>
