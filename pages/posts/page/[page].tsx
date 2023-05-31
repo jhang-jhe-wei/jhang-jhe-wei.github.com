@@ -40,7 +40,7 @@ export default function PostsPage(props: PostsPageProps): React.ReactElement {
           <main>
             <div className="divide-y divide-gray-200">
               <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-                <h1 className="text-3xl font-extrabold text-primary dark:text-light tracking-tight sm:text-4xl md:text-[4rem] md:leading-[3.5rem]">
+                <h1 className="text-3xl text-primary dark:text-light tracking-tight sm:text-4xl md:text-[4rem] md:leading-[3.5rem]">
                   { t('blog') }
                 </h1>
                 <p className="text-lg text-primary dark:text-light">

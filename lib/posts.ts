@@ -80,8 +80,8 @@ export const totalPages: () => number = withCache(async () => Math.ceil((await f
 export const page = async (p: number) => {
   const posts = await all();
   return posts.slice(
+    (p - 1) * POSTS_PER_PAGE,
     p * POSTS_PER_PAGE,
-    (p + 1) * POSTS_PER_PAGE,
   );
 };
 
