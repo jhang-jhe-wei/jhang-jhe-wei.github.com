@@ -1,7 +1,7 @@
-import {useTranslation} from "next-i18next"
-import { AchievementsProps } from "../../interfaces/about_interface"
-import Achievement from "./achievement"
-export default function Achievements(achievementsProps:AchievementsProps):React.ReactElement {
+import { useTranslation } from 'next-i18next'
+import { AchievementsProps } from '../../interfaces/about_interface'
+import Achievement from './achievement'
+export default function Achievements (achievementsProps: AchievementsProps): React.ReactElement {
   const { t } = useTranslation()
   return (
     <div id="achievements" className="w-full text-nobile dark:from-slate-900 gray-700 dark:to-primary bg-gradient-to-r from-white to-light -translate-y-10 print:hidden">

@@ -1,11 +1,11 @@
-import {useTranslation} from 'next-i18next';
-import { ProjectProps} from '../../interfaces/portfolio_interface'
+import { useTranslation } from 'next-i18next'
+import { ProjectProps } from '../../interfaces/portfolio_interface'
 import Project from './project'
 interface ProjectsProps {
-  projects: ProjectProps[];
+  projects: ProjectProps[]
 }
 
-export default function Projects({projects}: ProjectsProps) {
+export default function Projects ({ projects }: ProjectsProps) {
   const { t } = useTranslation()
   return (
     <div className="mt-40 print:hidden">

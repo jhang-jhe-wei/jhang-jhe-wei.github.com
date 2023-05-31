@@ -1,12 +1,12 @@
-import {useTranslation} from "next-i18next"
-import { ListProps } from "../../interfaces/about_interface"
-import ListItem from "./list_item"
-export default function List(listProps:ListProps):React.ReactElement {
+import { useTranslation } from 'next-i18next'
+import { ListProps } from '../../interfaces/about_interface'
+import ListItem from './list_item'
+export default function List (listProps: ListProps): React.ReactElement {
   const { t } = useTranslation()
   return (
     <div className={`grid xl:grid-cols-3 grid-cols-5 ${listProps.styleName}`} id={listProps.id}>
       <h2 className="absolute hidden text-white md:text-4xl md:block font-notosans shadow-gray-700 rotate-90 origin-top-left xl:text-7xl print:md:hidden break-inside-avoid">
-        {listProps.backgroundText?.split(" ").map(text=>(
+        {listProps.backgroundText?.split(' ').map(text => (
           <span key={text}>
             {text}
             <br/>

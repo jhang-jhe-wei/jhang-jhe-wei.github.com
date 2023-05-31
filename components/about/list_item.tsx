@@ -1,21 +1,23 @@
-import { ListItemProps } from "../../interfaces/about_interface"
-import { useState, useEffect, useRef } from "react"
-export default function ListItem({item}:{item:ListItemProps}) {
+import { ListItemProps } from '../../interfaces/about_interface'
+import { useState, useEffect, useRef } from 'react'
+export default function ListItem ({ item }: {item: ListItemProps}) {
   const [reveal, setReveal] = useState(false)
-  const element = useRef(null)
-  useEffect(()=>{
-    if(reveal) return;
-    const scrollEventHandler = () => {
-      if((window.scrollY + window.innerHeight / 4 * 3) > element.current.offsetTop){
-        setReveal(true);
+  const element = useRef<HTMLLIElement>(null)
+  useEffect(() => {
+    if (reveal) return
+    const scrollEventHandler = (): void => {
+      const node = element.current
+      if (node === null) return
+      if ((window.scrollY + window.innerHeight / 4 * 3) > node.offsetTop) {
+        setReveal(true)
       }
     }
     document.addEventListener('scroll', scrollEventHandler)
-    return () => {document.removeEventListener('scroll', scrollEventHandler)}
+    return () => { document.removeEventListener('scroll', scrollEventHandler) }
   }, [reveal])
 
   return (
-    <li ref={element} className={`relative mb-16 text-3xl xl:text-4xl text-gray-400 transition-all duration-500 ${reveal? 'opacity-100' : 'translate-y-20 opacity-0'} print:mb-5 break-inside-avoid print:opacity-100 print:translate-y-0 md:min-h-[120px] min-h-[150px]`}>
+    <li ref={element} className={`relative mb-16 text-3xl xl:text-4xl text-gray-400 transition-all duration-500 ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'} print:mb-5 break-inside-avoid print:opacity-100 print:translate-y-0 md:min-h-[120px] min-h-[150px]`}>
       <svg viewBox="0 0 2 2" className="absolute z-10 w-2 -left-1.25 top-2 print:top-1">
         <circle cx="1" cy="1" r="1" className="fill-gray-400" />
       </svg>
@@ -25,7 +27,7 @@ export default function ListItem({item}:{item:ListItemProps}) {
             {item.startedAt}
           </p>
             {
-              item.endedAt && "~"
+              item.endedAt && '~'
             }
           <p className="max-w-[2ch] break-words md:max-w-full print:max-w-full">
           {item.endedAt}

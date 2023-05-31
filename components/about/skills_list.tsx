@@ -1,7 +1,7 @@
-import {useTranslation} from "next-i18next"
-import { SkillsListProps } from "../../interfaces/about_interface"
-import SkillsListItem from "./skills_list_item"
-export default function SkillsList({ data }:SkillsListProps):React.ReactElement {
+import { useTranslation } from 'next-i18next'
+import { SkillsListProps } from '../../interfaces/about_interface'
+import SkillsListItem from './skills_list_item'
+export default function SkillsList ({ data }: SkillsListProps): React.ReactElement {
   const { t } = useTranslation()
   return (
     <div id="skills" className="mt-32 print:mt-0 print:hidden">

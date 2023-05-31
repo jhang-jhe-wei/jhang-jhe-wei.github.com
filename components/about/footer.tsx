@@ -1,5 +1,5 @@
-import SocialMediaList from "../social_media_list/social_media_list"
-export default function Footer():React.ReactElement {
+import SocialMediaList from '../social_media_list/social_media_list'
+export default function Footer (): React.ReactElement {
   return (
     <footer className="bg-primary dark:bg-light py-9 print:bg-opacity-0 print:pt-10 print:pb-5">
       <p className="hidden text-center print:block text-primary dark:text-light">

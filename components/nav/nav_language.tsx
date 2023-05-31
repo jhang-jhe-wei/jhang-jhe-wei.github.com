@@ -1,27 +1,27 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import { useAppSelector, useAppDispatch } from '../../reducers/store';
-import { changeLanguage } from '../../reducers/locale_slice';
+import { useState } from 'react'
+import { useRouter } from 'next/router'
+import { useAppSelector, useAppDispatch } from '../../reducers/store'
+import { changeLanguage } from '../../reducers/locale_slice'
 
 const lngs = {
   en: { nativeName: 'English' },
   'zh-TW': { nativeName: '繁體中文' }
-};
+}
 
 const NavLanguage = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const router = useRouter();
-  const { language } = useAppSelector(state => state.locale);
-  const dispatch = useAppDispatch();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const router = useRouter()
+  const { language } = useAppSelector(state => state.locale)
+  const dispatch = useAppDispatch()
 
   const handleDropdownToggle = () => {
-    setIsDropdownOpen(isDropdownOpen => !isDropdownOpen);
-  };
+    setIsDropdownOpen(isDropdownOpen => !isDropdownOpen)
+  }
 
   const onToggleLanguageClick = (newLocale: string) => {
-    const { pathname, asPath, query } = router;
-    router.push({ pathname, query }, router.asPath, { locale: newLocale });
-  };
+    const { pathname, asPath, query } = router
+    router.push({ pathname, query }, router.asPath, { locale: newLocale })
+  }
 
   return (
     <div className="relative inline-block mx-6">
@@ -47,14 +47,14 @@ const NavLanguage = () => {
                 py-2
                 text-left
                 ${
-                  language === lng ?
-                    'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
+                  language === lng
+                    ? 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed'
                     : 'cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-white dark:hover:text-secondary hover:text-secondary'
                 }`
               }
               onClick={() => {
-                onToggleLanguageClick(lng);
-                setIsDropdownOpen(false);
+                onToggleLanguageClick(lng)
+                setIsDropdownOpen(false)
                 dispatch(changeLanguage(lng))
               }}
               disabled={language === lng}
@@ -65,7 +65,7 @@ const NavLanguage = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default NavLanguage;
+export default NavLanguage

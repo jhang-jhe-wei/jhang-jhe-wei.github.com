@@ -1,13 +1,13 @@
-import SocialMediaList from "../social_media_list/social_media_list"
+import SocialMediaList from '../social_media_list/social_media_list'
 import profileImg from '../../public/images/profile.png'
-import { useTranslation } from "next-i18next"
+import { useTranslation } from 'next-i18next'
 
-export default function profoilo():React.ReactElement {
-  const { t } = useTranslation();
+export default function profoilo (): React.ReactElement {
+  const { t } = useTranslation()
   const highlights = {
-    [t("achievementCount")]: 12,
-    [t("projectCount")]: 30,
-    [t("customerCount")]: 5
+    [t('achievementCount')]: 12,
+    [t('projectCount')]: 30,
+    [t('customerCount')]: 5
   }
   return (
     <div id="profile" className="mt-12 grid grid-cols-1 md:grid-cols-3 md:mt-36 print:grid-cols-4 print:gap-x-5 md:gap-x-12 print:md:grid-cols-4 print:mt-14 print:md:mt-14">
@@ -22,7 +22,7 @@ export default function profoilo():React.ReactElement {
         <div className="print:h-full print:flex print:justify-between print:flex-col">
           <h2 className="text-5xl font-bold tracking-wider print:text-base">{ t('name') }</h2>
           <ul className="mt-10 list-disc list-inside print:text-xs print:mt-0">
-            <li>{ t('nickNameIs', { nickName: 'Wells' } ) }</li>
+            <li>{ t('nickNameIs', { nickName: 'Wells' }) }</li>
             <li>{ t('locatedIn') }</li>
             <li className="hidden print:list-item">{ t('self-intro') }</li>
           </ul>
