@@ -1,9 +1,9 @@
-import { useAppDispatch } from "../../reducers/store";
-import { navIconItemClicked } from "../../reducers/actions";
-export default function NavIconItem():React.ReactElement{
-  const dispatch = useAppDispatch();
-  const clickHandler = ()=>{
-    dispatch(navIconItemClicked());
+import { useAppDispatch } from '../../reducers/store'
+import { navIconItemClicked } from '../../reducers/actions'
+export default function NavIconItem (): React.ReactElement {
+  const dispatch = useAppDispatch()
+  const clickHandler = () => {
+    dispatch(navIconItemClicked())
   }
 
   return (

@@ -1,6 +1,6 @@
 import { NavItemProps } from '../../interfaces/nav_interface'
 import Link from 'next/link'
-export default function NavItem(props:NavItemProps):React.ReactElement{
+export default function NavItem (props: NavItemProps): React.ReactElement {
   return (
     <div className="ml-12">
       <Link
@@ -10,5 +10,5 @@ export default function NavItem(props:NavItemProps):React.ReactElement{
         {props.children}
       </Link>
     </div>
-  );
+  )
 }

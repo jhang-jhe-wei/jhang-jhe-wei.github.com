@@ -1,19 +1,19 @@
-import { ProjectProps as Project } from "../../interfaces/portfolio_interface"
-import useReveal from "../../lib/use_reveal"
-import Modal from 'react-modal';
+import { ProjectProps as Project } from '../../interfaces/portfolio_interface'
+import useReveal from '../../lib/use_reveal'
+import Modal from 'react-modal'
 import { useState } from 'react'
 
-export default function Card({ project }: { project: Project }) {
+export default function Card ({ project }: { project: Project }) {
   const [element, reveal] = useReveal()
 
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false)
 
-  function openModal() {
-    setIsOpen(true);
+  function openModal () {
+    setIsOpen(true)
   }
 
-  function closeModal() {
-    setIsOpen(false);
+  function closeModal () {
+    setIsOpen(false)
   }
 
   return (

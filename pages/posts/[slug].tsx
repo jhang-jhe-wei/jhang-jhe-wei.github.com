@@ -1,9 +1,9 @@
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { GetStaticProps } from 'next'
 import Layout from '../../components/layout'
-import * as posts from '../../lib/posts';
-import rehypeRaw from "rehype-raw";
+import * as posts from '../../lib/posts'
+import rehypeRaw from 'rehype-raw'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useAppDispatch } from 'reducers/store'
 import { changeLanguage } from 'reducers/locale_slice'
@@ -11,17 +11,17 @@ import { useEffect } from 'react'
 import { i18n } from 'next-i18next.config'
 
 interface PostProps {
-  locale: typeof i18n.locales[number];
-  post: posts.Post;
+  locale: typeof i18n.locales[number]
+  post: posts.Post
 }
 
-export default function Post(props: PostProps): React.ReactElement {
+export default function Post (props: PostProps): React.ReactElement {
   const {
     post,
     locale
-  } = props;
-  const dispatch = useAppDispatch();
-  useEffect(()=>{
+  } = props
+  const dispatch = useAppDispatch()
+  useEffect(() => {
     dispatch(changeLanguage(locale))
   }, [])
 
@@ -44,7 +44,7 @@ export default function Post(props: PostProps): React.ReactElement {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const post = await posts.postDetail(context.params.slug as string);
+  const post = await posts.postDetail(context.params.slug as string)
   const {
     locale
   } = context
@@ -54,17 +54,16 @@ export const getStaticProps: GetStaticProps = async (context) => {
       post,
       locale,
       ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
+        'common'
+      ]))
     }
   }
 }
 
-export const getStaticPaths = async ({locales}) => {
-  const allPosts = await posts.all();
+export const getStaticPaths = async ({ locales }) => {
+  const allPosts = await posts.all()
   return {
     paths: allPosts.flatMap(p => (locales.map((locale: string) => ({ params: { slug: p.slug }, locale })))),
-    fallback: false,
+    fallback: false
   }
-
-};
+}

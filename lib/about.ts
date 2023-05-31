@@ -30,12 +30,12 @@ const AboutModel = object({
       name: string(),
       proficiency: number()
     }))
-    }
+  }
   ))
 })
 
-export async function getAboutData(locale: typeof i18n.locales[number]) {
-  const lng = locale ? locale: i18n.defaultLocale
+export async function getAboutData (locale: typeof i18n.locales[number]) {
+  const lng = locale || i18n.defaultLocale
   const filePath = path.join(process.cwd(), 'data', lng, 'about.yml')
   const file = fs.readFileSync(filePath, 'utf8')
   const data = YAML.parse(file)

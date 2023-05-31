@@ -1,15 +1,15 @@
-import { ProjectProps } from "../../interfaces/portfolio_interface"
-import useReveal from "../../lib/use_reveal"
+import { ProjectProps } from '../../interfaces/portfolio_interface'
+import useReveal from '../../lib/use_reveal'
 
 interface ProjectComponentProps {
-  project: ProjectProps;
-  index: number;
+  project: ProjectProps
+  index: number
 }
-export default function Project({project, index}: ProjectComponentProps) {
+export default function Project ({ project, index }: ProjectComponentProps) {
   const [element, reveal] = useReveal()
 
   return (
-    <li ref={element} className={`hover:scale-110 bg-white dark:bg-primary-opacity mx-auto max-w-xs xl:max-w-full flex xl:flex-row flex-col mb-10 transition-opacity-and-transform duration-500 ${reveal? 'opacity-100' : 'translate-y-20 opacity-0'} ${index % 2 == 0? "": "xl:flex-row-reverse"} print:opacity-100 print:translate-y-0`}>
+    <li ref={element} className={`hover:scale-110 bg-white dark:bg-primary-opacity mx-auto max-w-xs xl:max-w-full flex xl:flex-row flex-col mb-10 transition-opacity-and-transform duration-500 ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'} ${index % 2 == 0 ? '' : 'xl:flex-row-reverse'} print:opacity-100 print:translate-y-0`}>
       <img className="object-scale-down object-center bg-gray-300 h-60 w-80" src={project.image} alt=""/>
       <div className="flex flex-col justify-between flex-1 px-7 py-7">
         <div>

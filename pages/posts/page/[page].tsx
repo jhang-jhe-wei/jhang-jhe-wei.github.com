@@ -1,12 +1,12 @@
 import tinytime from 'tinytime'
-import Pagination from '../../../components/blog/pagination';
+import Pagination from '../../../components/blog/pagination'
 import { GetStaticProps } from 'next'
 import Layout from '../../../components/layout'
-import * as posts from '../../../lib/posts';
-import type { Post } from '../../../lib/posts';
+import * as posts from '../../../lib/posts'
+import type { Post } from '../../../lib/posts'
 import SectionContainer from '../../../components/blog/SectionContainer'
 import Link from 'next/link'
-import {useTranslation} from 'next-i18next';
+import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useAppDispatch } from 'reducers/store'
 import { changeLanguage } from 'reducers/locale_slice'
@@ -14,14 +14,14 @@ import { useEffect } from 'react'
 import { i18n } from 'next-i18next.config'
 
 interface PostsPageProps {
-  totalPage: number;
-  page: number;
-  posts: Post[];
-  locale: typeof i18n.locales[number];
+  totalPage: number
+  page: number
+  posts: Post[]
+  locale: typeof i18n.locales[number]
 }
 
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
-export default function PostsPage(props: PostsPageProps): React.ReactElement {
+export default function PostsPage (props: PostsPageProps): React.ReactElement {
   const {
     totalPage,
     page,
@@ -29,8 +29,8 @@ export default function PostsPage(props: PostsPageProps): React.ReactElement {
     locale
   } = props
   const { t } = useTranslation()
-  const dispatch = useAppDispatch();
-  useEffect(()=>{
+  const dispatch = useAppDispatch()
+  useEffect(() => {
     dispatch(changeLanguage(locale))
   }, [])
 
@@ -82,7 +82,7 @@ export default function PostsPage(props: PostsPageProps): React.ReactElement {
                           </div>
                         </article>
                       </li>
-                  );
+                  )
                 })}
               </ul>
             </div>
@@ -92,12 +92,12 @@ export default function PostsPage(props: PostsPageProps): React.ReactElement {
           </div>
         </SectionContainer>
       </Layout>
-  );
+  )
 }
 
 export const getStaticProps: GetStaticProps<PostsPageProps> = async (context) => {
-  const totalPage = await posts.totalPages();
-  const page = parseInt(context.params.page as string);
+  const totalPage = await posts.totalPages()
+  const page = parseInt(context.params.page as string)
   const {
     locale
   } = context
@@ -108,16 +108,16 @@ export const getStaticProps: GetStaticProps<PostsPageProps> = async (context) =>
       posts: await posts.page(page),
       locale,
       ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
+        'common'
+      ]))
     }
   }
 }
 
 export const getStaticPaths = async ({ locales }) => {
-  const paths = await posts.genIndexPaths(locales);
+  const paths = await posts.genIndexPaths(locales)
   return {
     paths,
-    fallback: false,
+    fallback: false
   }
-};
+}

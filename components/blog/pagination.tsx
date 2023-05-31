@@ -1,11 +1,11 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react'
+import Link from 'next/link'
 
 interface PaginationProps {
-  totalPage: number;
-  currentPage: number;
+  totalPage: number
+  currentPage: number
 }
-export default function Pagination(props: PaginationProps) {
+export default function Pagination (props: PaginationProps) {
   const { totalPage, currentPage } = props
   return (
     <nav aria-label="Page navigation example">
@@ -32,9 +32,9 @@ export default function Pagination(props: PaginationProps) {
                   dark:border-gray-700
                   dark:text-gray-400
                   ${
-                    currentPage === index + 1 ?
-                      'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white' :
-                      'hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white'
+                    currentPage === index + 1
+                      ? 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-white'
+                      : 'hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white'
                   }
                   `}
                   aria-current={currentPage === index + 1 ? 'page' : undefined}
@@ -43,7 +43,7 @@ export default function Pagination(props: PaginationProps) {
                   { index + 1 }
                 </Link>
               </li>
-            ))
+          ))
         }
         <li>
           <Link href={`/posts/page/${totalPage}`} className="block px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
@@ -53,6 +53,5 @@ export default function Pagination(props: PaginationProps) {
         </li>
       </ul>
     </nav>
-  );
+  )
 }
-

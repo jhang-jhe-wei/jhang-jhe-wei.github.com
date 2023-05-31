@@ -10,12 +10,12 @@ import { changeLanguage } from '../reducers/locale_slice'
 import { useEffect } from 'react'
 
 interface HomeProps {
-  locale: typeof i18n.locales[number];
+  locale: typeof i18n.locales[number]
 }
 
-export default function Home({ locale }: HomeProps):React.ReactElement {
-  const dispatch = useAppDispatch();
-  useEffect(()=>{
+export default function Home ({ locale }: HomeProps): React.ReactElement {
+  const dispatch = useAppDispatch()
+  useEffect(() => {
     dispatch(changeLanguage(locale))
   }, [])
   return (
@@ -54,8 +54,8 @@ export const getStaticProps = async ({ locale }) => {
     props: {
       locale,
       ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
-    },
+        'common'
+      ]))
+    }
   }
 }

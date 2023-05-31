@@ -12,7 +12,7 @@ import SkillsList from '../components/about/skills_list'
 import Projects from '../components/about/projects'
 import Resume from '../components/about/resume'
 import { getPortfolioData } from '../lib/portfolio'
-import { ProjectProps} from '../interfaces/portfolio_interface'
+import { ProjectProps } from '../interfaces/portfolio_interface'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { i18n } from '../next-i18next.config'
 import { useAppDispatch } from '../reducers/store'
@@ -21,17 +21,17 @@ import { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 
 interface AboutProps {
-    education: ListItemProps[];
-    works: ListItemProps[];
-    achievements: AchievementProps[];
-    skillsList: SkillsProps[];
-    projects: ProjectProps[];
-    locale: typeof i18n.locales[number];
+  education: ListItemProps[]
+  works: ListItemProps[]
+  achievements: AchievementProps[]
+  skillsList: SkillsProps[]
+  projects: ProjectProps[]
+  locale: typeof i18n.locales[number]
 }
 
-export default function about({education, works, achievements, skillsList, projects, locale}:AboutProps): React.ReactElement{
-  const dispatch = useAppDispatch();
-  useEffect(()=>{
+export default function about ({ education, works, achievements, skillsList, projects, locale }: AboutProps): React.ReactElement {
+  const dispatch = useAppDispatch()
+  useEffect(() => {
     dispatch(changeLanguage(locale))
   }, [])
   const { t } = useTranslation()
@@ -60,8 +60,8 @@ export default function about({education, works, achievements, skillsList, proje
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({locale}) => {
-  const aboutData = await getAboutData(locale);
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const aboutData = await getAboutData(locale)
   const projects: ProjectProps[] = await getPortfolioData(locale)
   return {
     props: {
@@ -69,8 +69,8 @@ export const getStaticProps: GetStaticProps = async ({locale}) => {
       projects,
       locale,
       ...(await serverSideTranslations(locale, [
-        'common',
-      ])),
+        'common'
+      ]))
     }
   }
 }

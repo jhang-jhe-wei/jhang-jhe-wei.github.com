@@ -14,8 +14,8 @@ const PortfolioModel = array(object({
   highlight: optional(boolean())
 }))
 
-export async function getPortfolioData(locale: typeof i18n.locales[number]) {
-  const lng = locale ? locale: i18n.defaultLocale
+export async function getPortfolioData (locale: typeof i18n.locales[number]) {
+  const lng = locale || i18n.defaultLocale
   const filePath = path.join(process.cwd(), 'data', lng, 'portfolio.yml')
   const file = fs.readFileSync(filePath, 'utf8')
   const data = YAML.parse(file)

@@ -5,11 +5,13 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard-with-typescript"
+        "standard-with-typescript",
+        "next/core-web-vitals"
     ],
     "overrides": [
     ],
     "parserOptions": {
+        "project": ["./tsconfig.json"],
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -17,5 +19,6 @@
         "react"
     ],
     "rules": {
+      "@typescript-eslint/strict-boolean-expressions": "warn"
     }
 }

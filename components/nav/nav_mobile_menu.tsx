@@ -1,9 +1,9 @@
-import { useTranslation } from "next-i18next";
-import Link from "next/link";
-export default function NavMobileMenu({reveal}) {
-  const { t } = useTranslation();
+import { useTranslation } from 'next-i18next'
+import Link from 'next/link'
+export default function NavMobileMenu ({ reveal }) {
+  const { t } = useTranslation()
   return (
-    <div className={`z-40 fixed top-0 left-0 h-screen transition-all overflow-x-hidden duration-500 bg-opacity-95 bg-primary ${reveal? "w-full": "w-0"}`}>
+    <div className={`z-40 fixed top-0 left-0 h-screen transition-all overflow-x-hidden duration-500 bg-opacity-95 bg-primary ${reveal ? 'w-full' : 'w-0'}`}>
       <div className="absolute w-full top-1/3">
         <ul className="ml-12">
           <li>
@@ -38,7 +38,7 @@ export default function NavMobileMenu({reveal}) {
           <li className="mt-16">
             <Link
               href="mailto:jhang0912407249@gmail.com"
-              className={`border border-secondary text-white px-5 pt-3 pb-2 rounded-[10px] bg-secondary dark:hover:border-primary hover:bg-white hover:text-secondary hover:no-underline`}
+              className={'border border-secondary text-white px-5 pt-3 pb-2 rounded-[10px] bg-secondary dark:hover:border-primary hover:bg-white hover:text-secondary hover:no-underline'}
               legacyBehavior>
               {t('contact')}
             </Link>
@@ -46,5 +46,5 @@ export default function NavMobileMenu({reveal}) {
         </ul>
       </div>
     </div>
-  );
+  )
 }
