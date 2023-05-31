@@ -2,11 +2,13 @@ import { ListItemProps } from '../../interfaces/about_interface'
 import { useState, useEffect, useRef } from 'react'
 export default function ListItem ({ item }: {item: ListItemProps}) {
   const [reveal, setReveal] = useState(false)
-  const element = useRef(null)
+  const element = useRef<HTMLLIElement>(null)
   useEffect(() => {
     if (reveal) return
-    const scrollEventHandler = () => {
-      if ((window.scrollY + window.innerHeight / 4 * 3) > element.current.offsetTop) {
+    const scrollEventHandler = (): void => {
+      const node = element.current
+      if (node === null) return
+      if ((window.scrollY + window.innerHeight / 4 * 3) > node.offsetTop) {
         setReveal(true)
       }
     }
