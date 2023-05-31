@@ -4,8 +4,27 @@ import { GetStaticProps } from 'next'
 import Layout from '../../components/layout'
 import * as posts from '../../lib/posts';
 import rehypeRaw from "rehype-raw";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useAppDispatch } from 'reducers/store'
+import { changeLanguage } from 'reducers/locale_slice'
+import { useEffect } from 'react'
+import { i18n } from 'next-i18next.config'
 
-export default function Post({ post }): React.ReactElement {
+interface PostProps {
+  locale: typeof i18n.locales[number];
+  post: posts.Post;
+}
+
+export default function Post(props: PostProps): React.ReactElement {
+  const {
+    post,
+    locale
+  } = props;
+  const dispatch = useAppDispatch();
+  useEffect(()=>{
+    dispatch(changeLanguage(locale))
+  }, [])
+
   return (
     <Layout>
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
@@ -26,22 +45,25 @@ export default function Post({ post }): React.ReactElement {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const post = await posts.postDetail(context.params.slug as string);
+  const {
+    locale
+  } = context
 
   return {
     props: {
       post,
+      locale,
+      ...(await serverSideTranslations(locale, [
+        'common',
+      ])),
     }
   }
 }
 
-export const getStaticPaths = async () => {
+export const getStaticPaths = async ({locales}) => {
   const allPosts = await posts.all();
   return {
-    paths: allPosts.map(p => ({
-      params: {
-        slug: p.slug
-      }
-    })),
+    paths: allPosts.flatMap(p => (locales.map((locale: string) => ({ params: { slug: p.slug }, locale })))),
     fallback: false,
   }
 
