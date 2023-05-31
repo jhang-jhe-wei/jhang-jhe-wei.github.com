@@ -62,7 +62,6 @@ export const all: () => Post[] = withCache(async () => {
         .use(strip)
         .process(content.replace(/(<([^>]+)>)/gi, ""))
         .then((file) => {
-          console.log(String(file))
           options.description = String(file)
         })
 
