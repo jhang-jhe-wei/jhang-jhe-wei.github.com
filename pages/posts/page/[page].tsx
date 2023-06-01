@@ -87,7 +87,7 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
               </ul>
             </div>
           </main>
-          <div className="flex justify-center mt-8 mb-4">
+          <div className="flex justify-center pt-8 pb-4">
             <Pagination currentPage={page} totalPage={totalPage}/>
           </div>
         </SectionContainer>
