@@ -55,8 +55,8 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
                           <dl>
                             <dt className="sr-only">Published on</dt>
                             <dd className="text-base font-medium text-primary dark:text-light">
-                              <time dateTime={Date()}>
-                                {postDateTemplate.render(new Date())}
+                              <time dateTime={post.options.createdAt}>
+                                {postDateTemplate.render(new Date(post.options.createdAt))}
                               </time>
                             </dd>
                           </dl>
