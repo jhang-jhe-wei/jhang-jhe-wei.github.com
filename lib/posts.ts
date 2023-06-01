@@ -1,8 +1,6 @@
 import grayMatter from 'gray-matter'
 import { promises as fs } from 'fs'
 import path from 'path'
-import { remark } from 'remark'
-import strip from 'strip-markdown'
 
 import { genQuery, genLinkProps, parseQuery } from './postQuery'
 
@@ -18,8 +16,8 @@ export interface Post {
   content: string
 }
 
-const POSTS_DIR_PATH = 'posts/'
-const POSTS_PER_PAGE = 6
+const POSTS_DIR_PATH = 'data/posts/'
+const POSTS_PER_PAGE = 10
 const POST_FILE_REGEX = /^(.+)\.md$/
 
 const postsDir = path.join(process.cwd(), POSTS_DIR_PATH)
@@ -59,14 +57,7 @@ export const all: () => Post[] = withCache(async () => {
     ).flatMap(
       match => (match ? [{ filename: match[0], slug: match[1] }] : [])
     ).map(async post => {
-      const { options, content } = await extractPost(post.filename)
-      remark()
-        .use(strip)
-        .process(content.replace(/(<([^>]+)>)/gi, ''))
-        .then((file) => {
-          options.description = String(file)
-        })
-
+      const { options } = await extractPost(post.filename)
       return { ...post, options }
     })
   )

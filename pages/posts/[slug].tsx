@@ -9,6 +9,17 @@ import { useAppDispatch } from 'reducers/store'
 import { changeLanguage } from 'reducers/locale_slice'
 import { useEffect } from 'react'
 import { i18n } from 'next-i18next.config'
+import Image from 'next/image'
+
+interface imageLoaderProps {
+  src: string
+}
+const imageLoader = (props: imageLoaderProps): string => {
+  const {
+    src
+  } = props
+  return `https://dokku-bucket.s3.us-east-2.amazonaws.com/wells-blog/${src}`
+}
 
 interface PostProps {
   locale: typeof i18n.locales[number]
@@ -34,6 +45,16 @@ export default function Post (props: PostProps): React.ReactElement {
               className="py-1 react-markdown box-border"
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeRaw]}
+              components={{
+                img: ({ node, ...props }) => (
+                  <Image
+                    loader={imageLoader}
+                    {...props}
+                    width={800}
+                    height={800}
+                  />
+                )
+              }}
               children={post.content}
             />
           </article>

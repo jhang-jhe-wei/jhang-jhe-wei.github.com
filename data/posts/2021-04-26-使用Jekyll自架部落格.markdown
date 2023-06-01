@@ -1,0 +1,169 @@
+---
+title:  "使用Jekyll自架部落格"
+date:   2021-04-26 22:52:03 +0800
+categories: Tutorial
+tags:  [Jekyll,Github-Page]
+description: Jekyll是一個靜態網頁的生成器，由Ruby程式語言編寫而成的，許多人會使用靜態網頁生成器製作blog，主要是因為直接編寫HTML需要大量與內容無關的格式標籤，用這種方式製作blog效率並不高，而靜態網頁的生成器幾乎都支援Markdown語法，不用編寫~~又臭又長的~~html而是使用Markdown這種易讀易寫的標籤語言，因此自然會更受到~~懶人們~~(我)的歡迎。
+---
+我是wells，擔任過室內配線的國手，征服了電氣領域後，現在正跨大版圖到資訊界。
+
+## 料理食材(內文內容)
+- [X] Jekyll的簡介
+- [X] Jekyll的安裝
+- [X] Jekyll的使用
+- [X] Github Page
+
+## 誰可以安心食用(適合誰讀)
+- [X] 知道Markdown語法
+- [X] 知道Github如何創建repository
+- [X] 對於網站、網頁有一點點概念
+
+## 服用完你會獲得什麼
+- [X] 知道Jekyll是什麼
+- [X] 知道如何使用Jekyll(初步)
+- [X] 知道如何使用Github Page
+
+## 基本介紹
+Jekyll是一個靜態網頁的生成器，由Ruby程式語言編寫而成的，許多人會使用靜態網頁生成器製作blog，主要是因為直接編寫HTML需要大量與內容無關的格式標籤，用這種方式製作blog效率並不高，而靜態網頁的生成器幾乎都支援Markdown語法，不用編寫~~又臭又長的~~html而是使用Markdown這種易讀易寫的標籤語言，因此自然會更受到~~懶人們~~(我)的歡迎。
+
+但無論如何，瀏覽器還是只能解讀HTML，所以我們最終還是得把Markdwon轉換為HTML，但試想每次寫完後都要手動拿去轉換是不是有點麻煩呀？
+
+而Jekyll這種靜態網頁的生成器最主要的功用就是協助處理繁瑣重複的動作，使作者可以更加專注內文的編寫，並在有所需求時又不失網頁靈活性。
+
+## 前置動作
+- 安裝好ruby版本並且確保版本在2.4以上
+    `ruby --version`
+- 確保gem有被安裝（安裝ruby時會自動安裝）
+    `gem --version`
+- 確認gcc/g++/make有被安裝
+    `gcc -v / g++ -v / make -v`
+
+## 安裝說明
+1. `gem install jekyll`
+
+    使用gem來安裝jekyll及其插件。
+    > gem的全名是RubyGems，是用於管理各式Ruby函式庫的管理器，類似於Python中的pip，Ruby函式庫的格式也被稱為gem，其中最有名就是Rails這個gem
+
+2. `jekyll new demo`
+
+    安裝完Jekyll後就可以使用new這個指令創建專案。
+    > 這邊的`demo`請換成自己的專案名稱
+
+3. `bundle install`
+
+    前面有提到gem是一個個Ruby的函式庫，如同Ruby或是各類程式語言有版本的編號，gem也會有，而bundler就是一個管理gem版本的gem(有點饒口)，bundler主要的功用是確保該專案使用的gem（包含版本）在本地端皆有安裝。
+    > 如果顯示bundle not found，請先執行`gem install bundler`
+
+4. `bundle exec jekyll serve`
+
+    運行jekyll server，其中的`serve`可以只打一個`s`，按下Ctrl+C可以關閉server。
+    > 如果前面不加上`bundle exec`事實上也是可以運行的，此段的用意是為了避免使用了不同的gem版本進行動作。
+
+
+此時在瀏覽器中輸入`http://127.0.0.1:4000/`，可以看到以下畫面：
+
+![](https://i.imgur.com/cSVTYE2.png)
+
+> jekyll serve預設使用4000 port，如果要更改，在啟動伺服器時使用`bundle exec jekyll serve -P [指定port號]`來指定。
+
+## Jekyll的設定介紹
+這邊來介紹Jekyll的幾個重要設定檔(.yml)和資料夾
+
+### YAML
+> 在Jekyll中會看到許多格式是.yml的檔案，那麼這個.yml是什麼呢？
+
+`.yml`是指YAML格式的檔案，其用來表達資料的序列化，例如以下：
+```
+receipt:     Oz-Ware Purchase Invoice
+date:        2012-08-06
+customer:
+  given:   Dorothy
+  family:  Gale
+```
+由於字串不需要引號包起來，使用YAML就可以很清晰的了解資料的結構，YAML也有一些具有意義的符號，詳情可以查閱[維基百科](https://zh.wikipedia.org/wiki/YAML)，唯一要特別注意的是YAML的縮排**千萬千萬不能使用TAB**，我曾經debug一整個下午就因為縮排用TAB......
+
+### _config.yml
+
+`_config.yml`是jekyll中最重要的設定檔，裡面變數儲存了包括root directory、網站名稱......的資料，因為_config.yml裡面的資料是全域性的，因此我們也會把網站擁有者資訊、各式社群連結放在這邊，以下就來介紹幾個常用的變數：
+
+> 修改_config.yml後Jekyll要重啟server才會被讀取哦！
+
+
+| 變數名稱 | 功用                                                                                        |
+| -------- | ------------------------------------------------------------------------------------------- |
+| url      | 你的domain name<br>使用GithubPage可能就是`https://yourname.github.io`                       |
+| baseurl  | 你的專案名稱，例如`/project-name`<br>假如伺服器含有多個專案時，就會使用這個變數區分不同專案 |
+| timezone | 設定時區用<br>但假如server有設定時區的話，就會以server為主 |
+
+### _site/
+當我們執行`bundle exec jekyll s`之後，你會發現檔案目錄多了`_site`這個資料夾：
+
+![](/assets/images/site截圖.png)
+
+可以發現`_site/`裡面我們寫的Markdown檔案都變成HTML了，這是因為執行`bundle exec jekyll s`後，內含的指令會把.md的檔案轉換為.html，而`_site/`也是我們之後要部署到伺服器上的資料夾。
+
+### _post/
+這個資料夾是我們存放文章的地方，通常每一篇的檔名會以時間和文章名稱命名，例如:`2021-04-26-使用Jekyll自架部落格.md`，請確保副檔名為`.md`或是`.markdown`，不然會沒有辦法轉換為HTML。
+
+在文章開頭的地方我們通常會加入以下內容：
+```
+---
+title:  "使用Jekyll自架部落格"
+date:   2021-04-26 22:52:03 +0800
+categories: Tutorial
+tags:  [Jekyll,Github-Page]
+---
+```
+只有`title`和`date`是必需的變數，其他的變數都可以自行增減，但前提是你要知道如何操作XD<br>
+寫完上面的文章開頭後，接著就可以用Markdown語法開開心心的進行內文書寫了～
+
+### _drafts/
+ 這個資料夾是我們存放草稿的地方，預設是沒有這個資料夾的，需要自己新增，相比於`_post/`，`_drafts/`的文章並不會在你執行`bundle exec jekyll s`時出現，必須得在後面加入`--draft`才行。
+
+## 部署到Github Page
+### 前言
+當專案在本機端寫的差不多的時候，你很滿意，但是別人並不知道你的感受......
+
+因為你寫的東西都在你的電腦上，如果你要讓全世界的人都看到，那麼你勢必得把它推到網路上，現在你只要付一點點小錢，購買我們wells網路公司的A方案，就可以享受靜態網站代管服務囉。
+
+如果你不想花錢，當然也可以選擇用Github Page架設免費的靜態網站。
+
+### 部署動作
+前述有提到所有的靜態網頁都在_site中，因此只要部署_site這個資料夾整個網站就可以運作正常，但是這樣子的動作不太好，因為就像是只留卵而不留雞一樣，因此更好的做法是把Jekyll的專案和產生出來的_site都推上同一個repository，之後以不同的分支(Branch)作為區分，以下為部署動作：
+1. 到Github中新建一個repository。
+2. 先把Jekyll專案推上repository。
+    在Jekyll專案根目錄執行以下內容：
+    ```
+    git init
+    git add .
+    git commit -m "提交訊息"
+    git remote add origin [你的repository url]
+    git push -u origin master
+    ```
+    以上動作是把整個專案推上剛剛新建的repository，由於沒有指定分支，因此預設會是master，完成後你就可以在Github上看到剛剛推上去的內容了，但是在這一步你依然無法看到你的網頁。
+    > 你可能發現_site和其他幾個資料夾並沒有在這個repository裏，這是因為.gitignore裡含有這幾個檔案名稱，因此git並不會把這些檔案加入git資料庫中，自然也不會被推到網路上。
+3. 把_site推上repository。
+
+    在終端機運行以下指令
+    ```
+    cd _site
+    git init
+    git checkout -B gh-pages
+    git add .
+    git commit -m "提交訊息"
+    git remote add origin [你的repository url]
+    git push -u origin gh-pages
+    ```
+    在本地端要做的事情已經結束了，接著是Github上面的設定：
+
+    首先，到Github Page設定的位置
+    ![](https://i.imgur.com/HZmWFB5.png)
+    在repository上排的選單中點擊最右邊的Settings，之後在左邊的列表中點擊Pages的欄位。
+
+    ![](https://i.imgur.com/I6CkPMb.png)
+    這張圖與你目前的畫面可能有所差異，但大致上都相同，在Source(紅框)的選項中，選擇_site推上的gh-pages分支，接著選擇`/root`，按下儲存後你會得到一個URL，點擊後就可以連到你的網站了。
+
+    ![](/assets/images/jekyll-demo.png)
+
+## 結語
+網路上有許多方便寫部落格的網站，如：[Medium](https://medium.com/)、[Google blogger](https://www.blogger.com/about/?hl=zh-TW)，讓你不需要寫任何的程式碼、HTML甚至是Markdown就可以輕鬆建立出一個不錯的部落格，但本人之所以不願意這麼做，除了~~想不開~~外，是因為我認為自行架設blog可以學得很多東西，這就等於是一個Side Project，並且身為一位軟體工程師，當別人看到你的blog是來自你自架的網站，不用多說，自然也可以了解到你的實力，有這麼多好處，專屬於你自己的blog還不來架一個嗎？XD
