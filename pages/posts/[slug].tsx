@@ -40,7 +40,7 @@ export default function Post (props: PostProps): React.ReactElement {
     <Layout>
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-          <article className="w-full max-w-2xl mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+          <article className="w-full max-w-2xl mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert prose">
             <ReactMarkdown
               className="py-1 react-markdown box-border"
               remarkPlugins={[remarkGfm]}
