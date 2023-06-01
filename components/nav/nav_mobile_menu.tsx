@@ -15,7 +15,7 @@ export default function NavMobileMenu ({ reveal }) {
             <Link
               href="/portfolio"
               className="text-xl text-white hover:no-underline"
-              legacyBehavior>
+              >
               {t('portfolio')}
             </Link>
           </li>
@@ -23,7 +23,7 @@ export default function NavMobileMenu ({ reveal }) {
             <Link
               href="/about"
               className="text-xl text-white hover:no-underline"
-              legacyBehavior>
+              >
               {t('about')}
             </Link>
           </li>
@@ -31,7 +31,7 @@ export default function NavMobileMenu ({ reveal }) {
             <Link
               href="/posts/page/1"
               className="text-xl text-white hover:no-underline"
-              legacyBehavior>
+              >
               {t('blog')}
             </Link>
           </li>
@@ -39,7 +39,7 @@ export default function NavMobileMenu ({ reveal }) {
             <Link
               href="mailto:jhang0912407249@gmail.com"
               className={'border border-secondary text-white px-5 pt-3 pb-2 rounded-[10px] bg-secondary dark:hover:border-primary hover:bg-white hover:text-secondary hover:no-underline'}
-              legacyBehavior>
+              >
               {t('contact')}
             </Link>
           </li>
