@@ -50,7 +50,7 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
               <ul className="divide-y divide-gray-200">
                 {posts.map(post => {
                   return (
-                      <li key={post.slug} className="py-12">
+                      <li key={post.slug} className="py-4">
                         <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                           <dl>
                             <dt className="sr-only">Published on</dt>
@@ -87,7 +87,7 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
               </ul>
             </div>
           </main>
-          <div className="flex justify-center pb-8">
+          <div className="flex justify-center mt-8 mb-4">
             <Pagination currentPage={page} totalPage={totalPage}/>
           </div>
         </SectionContainer>
