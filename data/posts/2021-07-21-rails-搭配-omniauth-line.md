@@ -1,7 +1,7 @@
 ---
 # Rails 搭配 Omniauth line
 title:  "Rails 搭配 Omniauth line"
-createdAt:   2021-07-21 09:00:00 +0800
+createdAt:   '2021-07-21T09:00:00Z'
 categories: Note
 tags:  [Rails]
 description: 本篇內容 1. 前置作業 2. 安裝相關套件 3. 生成 User Model 4. 設定  Line Login 5. 新增身份驗證 6. 實作登入登出

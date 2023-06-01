@@ -1,7 +1,7 @@
 ---
 # 使用Template美化你的Jekyll專案
 title:  "使用Template美化你的Jekyll專案"
-createdAt:   2021-05-01 09:50:00 +0800
+createdAt:   '2021-05-01T09:50:00Z'
 categories: Tutorial
 tags:  [Jekyll]
 description: 一個靜態網頁的生成器受歡迎程度除了本身的性能(速度、穩定度)外，有很大的因素取決於社群，關於Jekyll網路上有許多熱心人士提供各式各樣的主題，像是[jekyllthemes.org](http://jekyllthemes.org/)這個網站中就有各式各樣的模板供你選擇，但要特別注意的是不同的模板要求的jekyll版本也是會不同的。

@@ -1,7 +1,7 @@
 ---
 # Rails 實作 SQL Injection
 title:  "Rails 實作 SQL Injection"
-createdAt:   2021-07-19 09:00:00 +0800
+createdAt:   '2021-07-19T09:00:00Z'
 categories: Note
 tags:  ["Network security", Rails]
 description: SQL(結構化查詢語言)用於管理資料庫，由於其無法區分值和控制指令， 因此惡意人士可以藉由在值中安插控制指令從而對資料庫進行惡意操作，這種操作稱為 SQL Injection。

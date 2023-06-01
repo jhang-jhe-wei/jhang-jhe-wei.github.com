@@ -1,7 +1,7 @@
 ---
 # Ruby 使用 Double Splat Operator 修飾參數
 title:  "Ruby 使用 Double Splat Operator 修飾參數"
-createdAt:   2021-06-27 12:50:00 +0800
+createdAt:   '2021-06-27T12:50:00Z'
 categories: Tutorial
 tags:  [Ruby]
 description: 此篇是延伸至上一篇 [Ruby 使用 Splat Operator 修飾參數](../Ruby-使用-Splat-Operator-修飾參數/index.html)，上篇介紹的是 Splat Operator (*)，會將傳入的引數變成一個 Array，而此篇的 Double Splat Operator (**) 則是一個不同的應用，詳細內容就繼續看下去吧。

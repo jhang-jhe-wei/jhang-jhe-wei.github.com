@@ -1,7 +1,7 @@
 ---
 # Kamigo 搭配 Devise 實作會員功能
 title:  "Kamigo 搭配 Devise 實作會員功能"
-createdAt:   2021-07-11 09:50:00 +0800
+createdAt:   '2021-07-11T09:50:00Z'
 categories: Tutorial
 tags:  [Rails, Chatbot]
 description: 前陣子在做實作[台科不分系學姊](https://github.com/jhang-jhe-wei/NTUST-Senior)時，發現需要會員機制，但假如直接開一個表單要使用者註冊似乎又有點太麻煩， 因為最終傳到 Server 的每一條訊息都已經帶有使用者資訊，於是和卡米哥討論該怎麼做，沒想到他早就已經做過了，而且還結合了 Devise，十分的方便，真是偉哉偉哉卡米哥。

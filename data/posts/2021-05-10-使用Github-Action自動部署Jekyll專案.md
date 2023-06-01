@@ -1,7 +1,7 @@
 ---
 # 使用Github Action部署Jekyll專案
 title:  "使用Github Action部署Jekyll專案"
-createdAt:   2021-05-10 09:50:00 +0800
+createdAt:   '2021-05-10T09:50:00Z'
 categories: Tutorial
 tags:  [Jekyll]
 description: 在前幾篇文章中，我們了解到假如要部署Jekyll專案，除了專案本身外，還需要把`_site/`這個資料夾推上Github Page，因此假如能把這件事情變成自動化的話，一切都會輕鬆不少。

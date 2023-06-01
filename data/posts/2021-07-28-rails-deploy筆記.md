@@ -1,7 +1,7 @@
 ---
 # Rails Deploy 筆記
 title:  "Rails Deploy 筆記"
-createdAt:   2021-07-28 00:00:00 +0800
+createdAt:   '2021-07-28T00:00:00Z'
 categories: Note
 tags:  [Rails, GCP]
 description: 近期 GCP 的免費額度快沒了，身為一位免費仔我決定再開一個帳號進行移機動作，但每次移機都會發現一些詭異的事情導致浪費一整天，故寫下這個筆記希望以後移機可以快一點。

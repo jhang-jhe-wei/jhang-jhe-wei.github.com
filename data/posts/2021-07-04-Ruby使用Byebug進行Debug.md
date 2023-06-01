@@ -1,7 +1,7 @@
 ---
 # Ruby 使用 Byebug 進行 Debug
 title:  "Ruby 使用 Byebug 進行 Debug"
-createdAt:   2021-07-04 09:50:00 +0800
+createdAt:   '2021-07-04T09:50:00Z'
 categories: Note
 tags:  [Ruby]
 description: Byebug 是 Ruby 很出名的除錯工具，以 Gem 的方式加入進 Ruby 的專案中，其擁有其他除錯工具的相同功能，如： 1. 步進：程式一行一行執行。 2. 暫停：程式停止在指定處。 3. 交互式編輯環境(REPL)：在程式停止的該處進行操作。 4. 追蹤：追蹤變數的值在不同行的差異。

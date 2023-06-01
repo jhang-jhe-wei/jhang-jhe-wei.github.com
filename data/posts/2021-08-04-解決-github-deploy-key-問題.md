@@ -1,7 +1,7 @@
 ---
 # 解決 Github Deploy Key is already in use 問題
 title:  "解決 Github Deploy Key is already in use 問題"
-createdAt:   2021-08-04 00:00:00 +0800
+createdAt:   '2021-08-04T00:00:00Z'
 categories: Note
 tags:  [Deubg]
 description: 由於最近 Github 開始限制使用 Password(HTTPS) 進行 Push 的行為，因此之後盡量都改使用 SSH 的方式進行 Push，但是之前在設定 Deploy Keys 遇到了以下的錯誤...

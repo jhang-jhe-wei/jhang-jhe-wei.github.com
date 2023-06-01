@@ -1,7 +1,7 @@
 ---
 # Ruby 使用 Splat Operator 修飾參數
 title:  "Ruby 使用 Splat Operator 修飾參數"
-createdAt:   2021-06-27 09:50:00 +0800
+createdAt:   '2021-06-27T09:50:00Z'
 categories: Tutorial
 tags:  [Ruby]
 description: Splat Operator  是 Ruby 定義方法時很常使用的運算子，  使用 Splat Operator 修飾的參數會將傳入的引入變成一個 Array ，其可以運用在不確定會傳入多少引數的情況，關於其特性和使用範例請繼續看下去。

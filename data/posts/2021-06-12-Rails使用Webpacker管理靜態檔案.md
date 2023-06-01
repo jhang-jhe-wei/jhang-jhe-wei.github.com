@@ -1,10 +1,10 @@
 ---
 # Rails使用 Webpacker 管理靜態檔案
 title:  "Rails使用 Webpacker 管理靜態檔案"
-createdAt:   2021-06-12 09:00:00 +0800
+createdAt:   '2021-06-12T09:00:00Z'
 categories: Note
 tags:  [Rails]
-description: Rails專案中可能會有許多靜態的檔案，例如：JavaScript、Stylesheets 和圖檔，把所有的靜態檔案都放在`public`目錄或許是個選擇，但是檔案一多的時候，就不好管理了。因此為了便於管理這些檔案，Rails 提供以下兩種方式： 1. Webpacker 2. Assets Pipeline 雖然從Rails 6後預設使用 Webpacker 來管理 Javascript 並使用 Asset Pipeline 管理 CSS，但是要使用其中一邊管理全部的靜態資源也是可以的，因為[上篇](https://blog.wells.tw/posts/Rails%E4%BD%BF%E7%94%A8Assets-Pipeline%E7%AE%A1%E7%90%86%E9%9D%9C%E6%85%8B%E6%AA%94%E6%A1%88/)已經寫過使用 Assets Pipeline 的方式管理靜態資料，因此本篇介紹使用 Webpacker 的方式來實作。
+description: Rails專案中可能會有許多靜態的檔案，例如：JavaScript、Stylesheets 和圖檔，把所有的靜態檔案都放在`public`目錄或許是個選擇，但是檔案一多的時候，就不好管理了。因此為了便於管理這些檔案，Rails 提供以下兩種方式： 1. Webpacker 2. Assets Pipeline 雖然從Rails 6後預設使用 Webpacker 來管理 Javascript 並使用 Asset Pipeline 管理 CSS，但是要使用其中一邊管理全部的靜態資源也是可以的，因為上篇已經寫過使用 Assets Pipeline 的方式管理靜態資料，因此本篇介紹使用 Webpacker 的方式來實作。
 
 ---
 # Rails使用 Webpacker 管理靜態檔案

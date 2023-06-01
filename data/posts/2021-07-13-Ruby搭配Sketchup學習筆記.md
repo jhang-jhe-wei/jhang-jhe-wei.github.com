@@ -1,7 +1,7 @@
 ---
 # Ruby 搭配 Sketchup 學習筆記(一)
 title:  "Ruby 搭配 Sketchup 學習筆記(一)"
-createdAt:   2021-07-13 09:50:00 +0800
+createdAt:   '2021-07-13T09:50:00Z'
 categories: Note
 tags:  [Ruby, Sketchup]
 description: Sketchup 是一款在建築、都市計畫和遊戲開發都頗有名氣的 3D 建模軟體，而 Ruby 則是一個程式語言，它可以搭配 Sketchup 達成程式化 建模的任務，近期經由系主任引薦，要開發 Sketchup 的 Extension，雖然我寫過 Ruby，但 Sketchup 則是完全沒碰過，於是利用文章來記錄所學的一點一滴。本篇內容 1. 安裝 Sketchup 2. 使用 Ruby Console 印出第一個 Hello, world! 3. 安裝 Ruby code editor extension 4. 使用 Ruby code editor 畫出第一條直線

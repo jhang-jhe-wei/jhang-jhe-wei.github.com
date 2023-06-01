@@ -1,7 +1,7 @@
 ---
 # Rails使用Assets Pipeline管理靜態檔案
 title:  "Rails使用Assets Pipeline管理靜態檔案"
-createdAt:   2021-05-11 09:50:00 +0800
+createdAt:   '2021-05-11T09:50:00Z'
 categories: Note
 tags:  [Rails]
 description: Rails專案中可能會有許多靜態的檔案，例如：JavaScript、Stylesheets和圖檔，把所有的靜態檔案都放在`public`目錄或許是個選擇，但是檔案一多的時候，就不好管理了。
