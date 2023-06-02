@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import { GetStaticProps } from 'next'
 import Toc from '../components/about/toc'
 import Profile from '../components/about/profile'
@@ -36,26 +37,32 @@ export default function about ({ education, works, achievements, skillsList, pro
   const { t } = useTranslation()
 
   return (
-    <Layout>
-      <div className="container mx-auto">
-        <h1 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">{t('about')}</h1>
-        <Toc/>
-        <Profile/>
-        <div className="mt-56 print:mt-14">
-          <List id="education" category="education" backgroundText="Education Background" data={education} />
-          <List id="works" category="works" backgroundText="Work Experience" data={works} />
-          <List category="achievements" data={achievements} styleName="hidden print:grid" />
+    <>
+      <NextSeo
+        title={'about'}
+        description={'about me'}
+      />
+      <Layout>
+        <div className="container mx-auto">
+          <h1 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">{t('about')}</h1>
+          <Toc/>
+          <Profile/>
+          <div className="mt-56 print:mt-14">
+            <List id="education" category="education" backgroundText="Education Background" data={education} />
+            <List id="works" category="works" backgroundText="Work Experience" data={works} />
+            <List category="achievements" data={achievements} styleName="hidden print:grid" />
+          </div>
         </div>
-      </div>
-      <Achievements data={achievements}/>
-      <div className="container mx-auto">
-        <SkillsList data={skillsList}/>
-        <Projects projects={projects}/>
-      </div>
-      <Resume/>
-      <Footer/>
-    </Layout>
-  )
+        <Achievements data={achievements}/>
+        <div className="container mx-auto">
+          <SkillsList data={skillsList}/>
+          <Projects projects={projects}/>
+        </div>
+        <Resume/>
+        <Footer/>
+      </Layout>
+    </>
+)
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
