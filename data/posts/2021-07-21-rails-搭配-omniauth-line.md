@@ -1,5 +1,4 @@
 ---
-# Rails 搭配 Omniauth line
 title:  "Rails 搭配 Omniauth line"
 createdAt:   '2021-07-21T09:00:00Z'
 categories: Note

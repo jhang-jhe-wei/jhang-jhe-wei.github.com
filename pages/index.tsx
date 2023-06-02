@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import Figure from '../components/landing/figure'
 import Signboard from '../components/landing/signboard'
 import PipelineDiagram from '../components/landing/pipeline_diagram'
@@ -8,6 +9,8 @@ import { i18n } from '../next-i18next.config'
 import { useAppDispatch } from '../reducers/store'
 import { changeLanguage } from '../reducers/locale_slice'
 import { useEffect } from 'react'
+import { useTranslation } from 'next-i18next'
+import DefaultSeo from '../next-seo.config'
 
 interface HomeProps {
   locale: typeof i18n.locales[number]
@@ -18,8 +21,20 @@ export default function Home ({ locale }: HomeProps): React.ReactElement {
   useEffect(() => {
     dispatch(changeLanguage(locale))
   }, [])
+  const { t } = useTranslation()
   return (
     <>
+      <NextSeo
+        title={t('home')}
+        description={t('homeDescription')}
+        openGraph={{
+          ...DefaultSeo.openGraph,
+          locale,
+          title: t('home'),
+          description: t('homeDescription')
+        }}
+      />
+      <h1 className="hidden">{t('homeDescription')}</h1>
       <div className="bg-[length:40px_40px] bg-grid-dark dark:bg-grid-light min-h-screen">
         <Layout>
           <div className="mt-2 lg:mt-0">

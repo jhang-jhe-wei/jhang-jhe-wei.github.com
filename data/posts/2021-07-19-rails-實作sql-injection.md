@@ -1,5 +1,4 @@
 ---
-# Rails 實作 SQL Injection
 title:  "Rails 實作 SQL Injection"
 createdAt:   '2021-07-19T09:00:00Z'
 categories: Note

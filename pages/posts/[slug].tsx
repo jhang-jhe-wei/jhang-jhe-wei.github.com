@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { GetStaticProps } from 'next'
@@ -10,6 +11,7 @@ import { changeLanguage } from 'reducers/locale_slice'
 import { useEffect } from 'react'
 import { i18n } from 'next-i18next.config'
 import Image from 'next/image'
+import DefaultSeo from '../../next-seo.config'
 
 interface imageLoaderProps {
   src: string
@@ -37,30 +39,44 @@ export default function Post (props: PostProps): React.ReactElement {
   }, [])
 
   return (
-    <Layout>
-      <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
-        <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
-          <article className="w-full max-w-2xl mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert prose dark:prose-invert">
-            <ReactMarkdown
-              className="py-1 react-markdown box-border"
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeRaw]}
-              components={{
-                img: ({ node, ...props }) => (
-                  <Image
-                    loader={imageLoader}
-                    {...props}
-                    width={800}
-                    height={800}
-                  />
-                )
-              }}
-              children={post.content}
-            />
-          </article>
-        </div>
-      </main>
-    </Layout>
+    <>
+      <NextSeo
+        title={post.slug}
+        description={post.options.description}
+        canonical={`https://wells.tw/posts/${post.slug}}`}
+        openGraph={{
+          ...DefaultSeo.openGraph,
+          locale,
+          url: 'https://wells.tw/about',
+          title: post.slug,
+          description: post.options.description
+        }}
+      />
+      <Layout>
+        <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
+          <div className="flex justify-between px-4 mx-auto max-w-screen-xl ">
+            <article className="w-full max-w-2xl mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert prose dark:prose-invert">
+              <ReactMarkdown
+                className="py-1 react-markdown box-border"
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeRaw]}
+                components={{
+                  img: ({ node, ...props }) => (
+                    <Image
+                      loader={imageLoader}
+                      {...props}
+                      width={800}
+                      height={800}
+                    />
+                  )
+                }}
+                children={post.content}
+              />
+            </article>
+          </div>
+        </main>
+      </Layout>
+    </>
   )
 }
 

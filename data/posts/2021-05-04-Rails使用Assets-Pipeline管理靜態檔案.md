@@ -1,5 +1,4 @@
 ---
-# Rails使用Assets Pipeline管理靜態檔案
 title:  "Rails使用Assets Pipeline管理靜態檔案"
 createdAt:   '2021-05-11T09:50:00Z'
 categories: Note

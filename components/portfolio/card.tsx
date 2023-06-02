@@ -26,9 +26,9 @@ export default function Card ({ project }: { project: Project }) {
         overlayClassName="z-40 fixed inset-0 bg-dark-mask px-5 flex justify-center items-center"
       >
         <div className="flex-1 overflow-y-auto">
-          <img className="object-scale-down object-center w-full bg-gray-300 max-h-screen-1/3" src={project.image} alt={project.title} />
+          <img className="object-scale-down object-center w-full bg-gray-300 max-h-screen-1/3" src={project.image} alt={project.title} width={300} height={300}/>
           <div className="mx-6 mt-5 text-lg">
-            <h2 className="font-bold text-secondary">{project.title}</h2>
+            <h3 className="font-bold text-secondary">{project.title}</h3>
             <p className="mt-5 text-sm text-zinc-700">{project.description}</p>
           </div>
           <div className="pb-8 mx-6 mt-8">
@@ -44,9 +44,9 @@ export default function Card ({ project }: { project: Project }) {
       </Modal>
 
       <div ref={element} className={`mx-auto max-w-xs bg-white font-notosans transition-all duration-500 hover:cursor-pointer ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'} flex flex-col`} onClick={openModal}>
-        <img className="object-scale-down object-center bg-gray-300 h-60 w-80" src={project.image} alt={project.title} />
+        <img className="object-scale-down object-center bg-gray-300 h-60 w-80" src={project.image} alt={project.title} width={300} height={300} />
         <div className="flex flex-col justify-around flex-1 px-5 py-6 text-lg">
-          <h2 className="font-bold text-secondary">{project.title}</h2>
+          <h3 className="font-bold text-secondary">{project.title}</h3>
           <p className="mt-5 text-sm line-clamp-5 text-zinc-700">{project.description}</p>
           <div className="mt-8">
             {
