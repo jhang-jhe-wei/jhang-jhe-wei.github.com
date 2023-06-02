@@ -12,6 +12,7 @@ import { i18n } from '../next-i18next.config'
 import { useAppDispatch } from '../reducers/store'
 import { changeLanguage } from '../reducers/locale_slice'
 import { useEffect } from 'react'
+import DefaultSeo from '../next-seo.config'
 
 interface PortfolioProps {
   projects: Project[]
@@ -38,12 +39,21 @@ export default function Portfolio ({ projects, tags, locale }: PortfolioProps): 
   return (
     <>
       <NextSeo
-        title={'portfolio'}
-        description={'my portfolio'}
+        title={t('portfolio')}
+        description={t('portfolioDescription')}
+        canonical={"https://wells.tw/portfolio"}
+        openGraph={{
+          ...DefaultSeo.openGraph,
+          locale,
+          url: 'https://wells.tw/portfolio',
+          title: t('portfolio'),
+          description: t('portfolioDescription')
+        }}
       />
+      <h1 className="hidden">{t('portfolioDescription')}</h1>
       <Layout>
         <div className="container mx-auto">
-          <h1 className="text-5xl text-center text-primary dark:text-white mt-28">{t('portfolio')}</h1>
+          <h2 className="text-5xl text-center text-primary dark:text-white mt-28">{t('portfolio')}</h2>
           <Tags tags={tags} queryTag={queryTag} />
           <div className="pb-20 mt-12 gap-9 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {projects.filter(project => project.tag == queryTag).map(project => <Card key={project.title} project={project} />)}
