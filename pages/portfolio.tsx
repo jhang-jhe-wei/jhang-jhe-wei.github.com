@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next'
-import Head from 'next/head'
 import Layout from '../components/layout'
 import Card from '../components/portfolio/card'
 import Tags from '../components/portfolio/tags'
@@ -29,7 +28,6 @@ export default function Portfolio ({ projects, tags, locale }: PortfolioProps): 
 
   return (
     <Layout>
-      <Head><title>{t('portfolio')}</title></Head>
       <div className="container mx-auto">
         <h1 className="text-5xl text-center text-primary dark:text-white mt-28">{t('portfolio')}</h1>
         <Tags tags={tags} queryTag={queryTag} />

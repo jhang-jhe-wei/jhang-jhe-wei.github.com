@@ -1,5 +1,4 @@
 import { GetStaticProps } from 'next'
-import Head from 'next/head'
 import Toc from '../components/about/toc'
 import Profile from '../components/about/profile'
 import List from '../components/about/List'
@@ -39,7 +38,6 @@ export default function about ({ education, works, achievements, skillsList, pro
   return (
     <Layout>
       <div className="container mx-auto">
-        <Head><title>{t('aboutme')}</title></Head>
         <h1 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">{t('about')}</h1>
         <Toc/>
         <Profile/>
