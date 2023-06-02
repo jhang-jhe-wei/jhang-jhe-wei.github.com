@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import { GetStaticProps } from 'next'
 import Layout from '../components/layout'
 import Card from '../components/portfolio/card'
@@ -27,15 +28,21 @@ export default function Portfolio ({ projects, tags, locale }: PortfolioProps): 
   }, [])
 
   return (
-    <Layout>
-      <div className="container mx-auto">
-        <h1 className="text-5xl text-center text-primary dark:text-white mt-28">{t('portfolio')}</h1>
-        <Tags tags={tags} queryTag={queryTag} />
-        <div className="pb-20 mt-12 gap-9 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-          {projects.filter(project => project.tag == queryTag).map(project => <Card key={project.title} project={project} />)}
+    <>
+      <NextSeo
+        title={'portfolio'}
+        description={'my portfolio'}
+      />
+      <Layout>
+        <div className="container mx-auto">
+          <h1 className="text-5xl text-center text-primary dark:text-white mt-28">{t('portfolio')}</h1>
+          <Tags tags={tags} queryTag={queryTag} />
+          <div className="pb-20 mt-12 gap-9 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+            {projects.filter(project => project.tag == queryTag).map(project => <Card key={project.title} project={project} />)}
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 
