@@ -34,6 +34,7 @@ export default function Home ({ locale }: HomeProps): React.ReactElement {
           description: t('homeDescription')
         }}
       />
+      <h1 className="hidden">{t('homeDescription')}</h1>
       <div className="bg-[length:40px_40px] bg-grid-dark dark:bg-grid-light min-h-screen">
         <Layout>
           <div className="mt-2 lg:mt-0">
