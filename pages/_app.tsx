@@ -1,3 +1,5 @@
+import { DefaultSeo } from 'next-seo'
+import SEO from '../next-seo.config'
 import '../styles/global.css'
 import { AppProps } from 'next/app'
 import store, { useAppSelector } from '../reducers/store'
@@ -11,6 +13,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Provider store={store}>
       <ModeEffect />
+      <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </Provider>
   )
