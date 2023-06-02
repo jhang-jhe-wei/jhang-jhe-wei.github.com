@@ -1,5 +1,4 @@
 ---
-# Kamigo 搭配 Devise 實作會員功能
 title:  "Kamigo 搭配 Devise 實作會員功能"
 createdAt:   '2021-07-11T09:50:00Z'
 categories: Tutorial

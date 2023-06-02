@@ -1,5 +1,4 @@
 ---
-# Rails Deploy 筆記
 title:  "Rails Deploy 筆記"
 createdAt:   '2021-07-28T00:00:00Z'
 categories: Note

@@ -1,5 +1,4 @@
 ---
-# Ruby 使用 Double Splat Operator 修飾參數
 title:  "Ruby 使用 Double Splat Operator 修飾參數"
 createdAt:   '2021-06-27T12:50:00Z'
 categories: Tutorial

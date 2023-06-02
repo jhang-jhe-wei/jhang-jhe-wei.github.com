@@ -1,5 +1,4 @@
 ---
-# 使用 Google Cloud DNS 設定域名
 title:  "使用 Google Cloud DNS 設定域名"
 createdAt:   '2021-05-31T09:15:00Z'
 categories: Tutorial

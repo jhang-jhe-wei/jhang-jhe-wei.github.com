@@ -1,5 +1,4 @@
 ---
-# Rails使用 Webpacker 管理靜態檔案
 title:  "Rails使用 Webpacker 管理靜態檔案"
 createdAt:   '2021-06-12T09:00:00Z'
 categories: Note

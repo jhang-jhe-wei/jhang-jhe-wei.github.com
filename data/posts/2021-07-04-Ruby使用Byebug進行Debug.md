@@ -1,5 +1,4 @@
 ---
-# Ruby 使用 Byebug 進行 Debug
 title:  "Ruby 使用 Byebug 進行 Debug"
 createdAt:   '2021-07-04T09:50:00Z'
 categories: Note

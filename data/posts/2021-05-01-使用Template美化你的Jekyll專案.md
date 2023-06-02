@@ -1,5 +1,4 @@
 ---
-# 使用Template美化你的Jekyll專案
 title:  "使用Template美化你的Jekyll專案"
 createdAt:   '2021-05-01T09:50:00Z'
 categories: Tutorial

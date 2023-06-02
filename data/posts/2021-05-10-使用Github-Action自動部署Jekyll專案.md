@@ -1,5 +1,4 @@
 ---
-# 使用Github Action部署Jekyll專案
 title:  "使用Github Action部署Jekyll專案"
 createdAt:   '2021-05-10T09:50:00Z'
 categories: Tutorial

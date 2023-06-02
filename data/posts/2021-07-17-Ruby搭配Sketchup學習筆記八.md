@@ -1,5 +1,4 @@
 ---
-# Ruby 搭配 Sketchup 學習筆記(八)
 title:  "Ruby 搭配 Sketchup 學習筆記(八)"
 createdAt:   '2021-07-17T09:00:00Z'
 categories: Note
