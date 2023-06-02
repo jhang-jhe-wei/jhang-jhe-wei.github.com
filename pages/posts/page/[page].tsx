@@ -13,6 +13,7 @@ import { useAppDispatch } from 'reducers/store'
 import { changeLanguage } from 'reducers/locale_slice'
 import { useEffect } from 'react'
 import { i18n } from 'next-i18next.config'
+import DefaultSeo from '../../../next-seo.config'
 
 interface PostsPageProps {
   totalPage: number
@@ -38,8 +39,16 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
   return (
     <>
       <NextSeo
-        title={`blog | ${page}`}
-        description={'my blog'}
+        title={t('blog')}
+        description={t('blogDescription')}
+        canonical={'https://wells.tw/posts/page'}
+        openGraph={{
+          ...DefaultSeo.openGraph,
+          locale,
+          url: 'https://wells.tw/posts/page',
+          title: t('blog'),
+          description: t('blogDescription')
+        }}
       />
       <Layout>
         <SectionContainer>
