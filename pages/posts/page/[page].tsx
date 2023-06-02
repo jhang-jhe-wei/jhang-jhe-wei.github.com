@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo'
 import tinytime from 'tinytime'
 import Pagination from '../../../components/blog/pagination'
 import { GetStaticProps } from 'next'
@@ -35,6 +36,11 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
   }, [])
 
   return (
+    <>
+      <NextSeo
+        title={`blog | ${page}`}
+        description={'my blog'}
+      />
       <Layout>
         <SectionContainer>
           <main>
@@ -50,38 +56,38 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
               <ul className="divide-y divide-gray-200">
                 {posts.map(post => {
                   return (
-                      <li key={post.slug} className="py-4">
-                        <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                          <dl>
-                            <dt className="sr-only">Published on</dt>
-                            <dd className="text-base font-medium text-primary dark:text-light">
-                              <time dateTime={post.options.createdAt}>
-                                {postDateTemplate.render(new Date(post.options.createdAt))}
-                              </time>
-                            </dd>
-                          </dl>
-                          <div className="space-y-5 xl:col-span-3">
-                            <div className="space-y-6">
-                              <h2 className="text-2xl font-bold tracking-tight">
-                                <Link href={`/posts/${post.slug}`} className="text-primary dark:text-light">
-                                  {post.slug}
-                                </Link>
-                              </h2>
-                              <div className="text-primary dark:text-light prose max-w-none">
-                                {post.options.description}
-                              </div>
-                            </div>
-                            <div className="text-base font-medium">
-                              <Link
-                                  href={`/posts/${post.slug}`}
-                                  className="text-teal-600 hover:text-teal-700"
-                                  aria-label={`Read "${post.slug}"`}>
-                                  Read more &rarr;
+                    <li key={post.slug} className="py-4">
+                      <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                        <dl>
+                          <dt className="sr-only">Published on</dt>
+                          <dd className="text-base font-medium text-primary dark:text-light">
+                            <time dateTime={post.options.createdAt}>
+                              {postDateTemplate.render(new Date(post.options.createdAt))}
+                            </time>
+                          </dd>
+                        </dl>
+                        <div className="space-y-5 xl:col-span-3">
+                          <div className="space-y-6">
+                            <h2 className="text-2xl font-bold tracking-tight">
+                              <Link href={`/posts/${post.slug}`} className="text-primary dark:text-light">
+                                {post.slug}
                               </Link>
+                            </h2>
+                            <div className="text-primary dark:text-light prose max-w-none">
+                              {post.options.description}
                             </div>
                           </div>
-                        </article>
-                      </li>
+                          <div className="text-base font-medium">
+                            <Link
+                              href={`/posts/${post.slug}`}
+                              className="text-teal-600 hover:text-teal-700"
+                              aria-label={`Read "${post.slug}"`}>
+                              Read more &rarr;
+                            </Link>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
                   )
                 })}
               </ul>
@@ -92,6 +98,7 @@ export default function PostsPage (props: PostsPageProps): React.ReactElement {
           </div>
         </SectionContainer>
       </Layout>
+    </>
   )
 }
 
