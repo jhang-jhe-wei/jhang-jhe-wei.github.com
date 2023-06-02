@@ -42,7 +42,7 @@ export default function about ({ education, works, achievements, skillsList, pro
       <NextSeo
         title={t('about')}
         description={t('aboutDescription')}
-        canonical={"https://wells.tw/about"}
+        canonical={'https://wells.tw/about'}
         openGraph={{
           ...DefaultSeo.openGraph,
           locale,
@@ -72,7 +72,7 @@ export default function about ({ education, works, achievements, skillsList, pro
         <Footer/>
       </Layout>
     </>
-)
+  )
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {

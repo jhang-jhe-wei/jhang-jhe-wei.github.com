@@ -24,13 +24,13 @@ export default function Portfolio ({ projects, tags, locale }: PortfolioProps): 
   const queryTag = getQueryTag() || tags[0]
   const { t } = useTranslation()
   const dispatch = useAppDispatch()
-  const router = useRouter();
+  const router = useRouter()
   useEffect(() => {
     dispatch(changeLanguage(locale))
   }, [])
 
   useEffect(() => {
-    async function removeQuery() {
+    async function removeQuery () {
       await router.replace(router.pathname, undefined, { locale })
     }
     removeQuery()
@@ -41,7 +41,7 @@ export default function Portfolio ({ projects, tags, locale }: PortfolioProps): 
       <NextSeo
         title={t('portfolio')}
         description={t('portfolioDescription')}
-        canonical={"https://wells.tw/portfolio"}
+        canonical={'https://wells.tw/portfolio'}
         openGraph={{
           ...DefaultSeo.openGraph,
           locale,

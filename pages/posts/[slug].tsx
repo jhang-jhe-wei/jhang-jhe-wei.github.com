@@ -68,7 +68,7 @@ export default function Post (props: PostProps): React.ReactElement {
                       width={800}
                       height={800}
                     />
-                    )
+                  )
                 }}
                 children={post.content}
               />
