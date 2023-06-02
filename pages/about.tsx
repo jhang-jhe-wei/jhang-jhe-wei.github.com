@@ -19,6 +19,7 @@ import { useAppDispatch } from '../reducers/store'
 import { changeLanguage } from '../reducers/locale_slice'
 import { useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
+import DefaultSeo from '../next-seo.config'
 
 interface AboutProps {
   education: ListItemProps[]
@@ -39,12 +40,21 @@ export default function about ({ education, works, achievements, skillsList, pro
   return (
     <>
       <NextSeo
-        title={'about'}
-        description={'about me'}
+        title={t('about')}
+        description={t('aboutDescription')}
+        canonical={"https://wells.tw/about"}
+        openGraph={{
+          ...DefaultSeo.openGraph,
+          locale,
+          url: 'https://wells.tw/about',
+          title: t('about'),
+          description: t('aboutDescription')
+        }}
       />
+      <h1 className="hidden">{t('aboutDescription')}</h1>
       <Layout>
         <div className="container mx-auto">
-          <h1 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">{t('about')}</h1>
+          <h2 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">{t('about')}</h2>
           <Toc/>
           <Profile/>
           <div className="mt-56 print:mt-14">
