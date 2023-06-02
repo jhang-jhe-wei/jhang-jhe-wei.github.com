@@ -11,6 +11,7 @@ import { changeLanguage } from 'reducers/locale_slice'
 import { useEffect } from 'react'
 import { i18n } from 'next-i18next.config'
 import Image from 'next/image'
+import DefaultSeo from '../../next-seo.config'
 
 interface imageLoaderProps {
   src: string
@@ -42,6 +43,14 @@ export default function Post (props: PostProps): React.ReactElement {
       <NextSeo
         title={post.slug}
         description={post.options.description}
+        canonical={`https://wells.tw/posts/${post.slug}}`}
+        openGraph={{
+          ...DefaultSeo.openGraph,
+          locale,
+          url: 'https://wells.tw/about',
+          title: post.slug,
+          description: post.options.description
+        }}
       />
       <Layout>
         <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">
