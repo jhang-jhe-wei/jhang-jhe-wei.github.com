@@ -23,9 +23,17 @@ export default function Portfolio ({ projects, tags, locale }: PortfolioProps): 
   const queryTag = getQueryTag() || tags[0]
   const { t } = useTranslation()
   const dispatch = useAppDispatch()
+  const router = useRouter();
   useEffect(() => {
     dispatch(changeLanguage(locale))
   }, [])
+
+  useEffect(() => {
+    async function removeQuery() {
+      await router.replace(router.pathname, undefined, { locale })
+    }
+    removeQuery()
+  }, [locale])
 
   return (
     <>
