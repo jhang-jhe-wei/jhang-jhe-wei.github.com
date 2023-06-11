@@ -37,7 +37,7 @@ export default function NavMobileMenu ({ reveal }) {
           </li>
           <li className="mt-16">
             <Link
-              href="mailto:jhang0912407249@gmail.com"
+              href="mailto:hi@wells.tw"
               className={'border border-secondary text-white px-5 pt-3 pb-2 rounded-[10px] bg-secondary dark:hover:border-primary hover:bg-white hover:text-secondary hover:no-underline'}
               >
               {t('contact')}

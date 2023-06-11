@@ -27,7 +27,7 @@ export default function SocialMediaList ({ mode, styleName }: { mode?: string, s
         </a>
       </li>
       <li className="mx-2">
-        <a href="mailto:jhang0912407249@gmail.com">
+        <a href="mailto:hi@wells.tw">
           <MailLogo mode={ mode }/>
         </a>
       </li>

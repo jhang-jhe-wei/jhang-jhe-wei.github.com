@@ -23,7 +23,7 @@ export default function Nav (): React.ReactElement {
           <NavItem href="/portfolio">{t('portfolio')}</NavItem>
           <NavItem href="/about">{t('about')}</NavItem>
           <NavItem href="/posts/page/1">{t('blog')}</NavItem>
-          <NavBtnItem href="mailto:jhang0912407249@gmail.com">{t('contact')}</NavBtnItem>
+          <NavBtnItem href="mailto:hi@wells.tw">{t('contact')}</NavBtnItem>
           <NavLanguage/>
           <NavIconItem/>
         </div>
