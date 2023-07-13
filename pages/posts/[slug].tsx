@@ -41,7 +41,7 @@ export default function Post (props: PostProps): React.ReactElement {
   return (
     <>
       <NextSeo
-        title={post.slug}
+        title={post.options.title}
         description={post.options.description}
         canonical={`https://wells.tw/posts/${post.slug}}`}
         openGraph={{
