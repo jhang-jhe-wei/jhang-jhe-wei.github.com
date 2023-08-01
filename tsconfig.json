@@ -2,7 +2,12 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "baseUrl": ".",
-    "target": "es5",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
