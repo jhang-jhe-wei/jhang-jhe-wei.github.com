@@ -11,6 +11,8 @@ import { i18n } from 'next-i18next.config'
 import DefaultSeo from '../../next-seo.config'
 import { GetServerSideProps } from 'next'
 import GithubAPI from '@/lib/githubAPI'
+import 'gitalk/dist/gitalk.css'
+import Gitalk from 'gitalk'
 
 interface Issue {
   title: string
@@ -34,6 +36,17 @@ export default function Post (props: PostProps): React.ReactElement {
   const dispatch = useAppDispatch()
   useEffect(() => {
     dispatch(changeLanguage(locale))
+
+    const gitalk = new Gitalk({
+      clientID: process.env.NEXT_PUBLIC_GITALK_CLIENT_ID as string,
+      clientSecret: process.env.NEXT_PUBLIC_GITALK_CLIENT_SECRET as string,
+      repo: 'comments',
+      owner: 'jhang-jhe-wei',
+      admin: ['jhang-jhe-wei']
+    })
+    console.log(process.env.NEXT_PUBLIC_GITALK_CLIENT_ID, process.env.NEXT_PUBLIC_GITALK_CLIENT_SECRET)
+
+    gitalk.render('gitalk-container')
   }, [])
 
   return (
@@ -70,6 +83,7 @@ export default function Post (props: PostProps): React.ReactElement {
                 }}
                 children={post.body}
               />
+            <div id="gitalk-container"></div>
             </article>
           </div>
         </main>
@@ -83,7 +97,6 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async (context)
     locale,
     params: { id }
   } = context
-  console.log(id)
 
   const result = await GithubAPI.request('GET /repos/{owner}/{repo}/issues/{issue_number}', {
     owner: 'jhang-jhe-wei',
