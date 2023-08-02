@@ -44,7 +44,6 @@ export default function Post (props: PostProps): React.ReactElement {
       owner: 'jhang-jhe-wei',
       admin: ['jhang-jhe-wei']
     })
-    console.log(process.env.NEXT_PUBLIC_GITALK_CLIENT_ID, process.env.NEXT_PUBLIC_GITALK_CLIENT_SECRET)
 
     gitalk.render('gitalk-container')
   }, [])

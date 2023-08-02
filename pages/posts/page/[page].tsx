@@ -133,7 +133,6 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async (context)
       'X-GitHub-Api-Version': '2022-11-28'
     }
   })
-  console.log(locale)
 
   const issues = result.data.filter((issue) => !issue.hasOwnProperty('pull_request')).map((issue) => ({
     title: issue.title,
