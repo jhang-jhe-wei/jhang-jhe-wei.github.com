@@ -50,10 +50,10 @@ export default function PostPage (props: PostProps): React.ReactElement {
         canonical={'https://wells.tw/posts/page'}
         openGraph={{
           ...DefaultSeo.openGraph,
-            locale,
-            url: 'https://wells.tw/posts/page',
-            title: t('blog'),
-            description: t('blogDescription')
+          locale,
+          url: 'https://wells.tw/posts/page',
+          title: t('blog'),
+          description: t('blogDescription')
         }}
       />
       <Layout>
@@ -133,6 +133,7 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async (context)
       'X-GitHub-Api-Version': '2022-11-28'
     }
   })
+  console.log(locale)
 
   const issues = result.data.filter((issue) => !issue.hasOwnProperty('pull_request')).map((issue) => ({
     title: issue.title,

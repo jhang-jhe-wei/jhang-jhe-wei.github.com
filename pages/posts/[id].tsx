@@ -58,7 +58,7 @@ export default function Post (props: PostProps): React.ReactElement {
         openGraph={{
           ...DefaultSeo.openGraph,
           locale,
-          url: 'https://wells.tw/about',
+          url: 'https://wells.tw/blog',
           title: post.title,
           description: post.description
         }}
