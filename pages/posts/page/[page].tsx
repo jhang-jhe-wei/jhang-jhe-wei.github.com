@@ -74,10 +74,10 @@ export default function PostPage (props: PostProps): React.ReactElement {
                     <li key={post.title} className="py-4">
                       <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                         <dl>
-                          <dt className="sr-only">Published on</dt>
+                          <dt className="sr-only">Last Updated on</dt>
                           <dd className="text-base font-medium text-primary dark:text-light">
-                            <time dateTime={post.createdAt}>
-                              {postDateTemplate.render(new Date(post.createdAt))}
+                            <time dateTime={post.updatedAt}>
+                              {postDateTemplate.render(new Date(post.updatedAt))}
                             </time>
                           </dd>
                         </dl>
@@ -137,6 +137,7 @@ export const getServerSideProps: GetServerSideProps<PostProps> = async (context)
   const issues = result.data.filter((issue) => !issue.hasOwnProperty('pull_request')).map((issue) => ({
     title: issue.title,
     id: issue.number,
+    sort: 'updated',
     createdAt: issue.created_at,
     updatedAt: issue.updated_at,
     labels: issue.labels.map((label) => label.name)
