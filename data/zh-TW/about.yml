@@ -25,6 +25,8 @@ works:
     startedAt: "七月 2022"
     endedAt: "Present"
     highlights:
+      - Pos Team member
+      - 改善 database migration 和 deployment 流程
       - 導入自動化測試到 LINE 團購
       - 升級 E-Tag 功能
       - 完成簡訊預約功能
