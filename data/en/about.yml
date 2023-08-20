@@ -25,6 +25,8 @@ works:
     startedAt: "Jul 2022"
     endedAt: "Present"
     highlights:
+      - "Pos Team member"
+      - "Improve database migration and deployment workflow"
       - "Implementing automated testing in the LINE group buying system."
       - "Upgrading the E-Tag feature."
       - "Implementing the SMS reservation feature."
