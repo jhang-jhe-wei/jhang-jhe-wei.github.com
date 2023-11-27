@@ -25,11 +25,13 @@ works:
     startedAt: "七月 2022"
     endedAt: "Present"
     highlights:
-      - Pos Team member
-      - 改善 database migration 和 deployment 流程
-      - 導入自動化測試到 LINE 團購
-      - 升級 E-Tag 功能
-      - 完成簡訊預約功能
+      - 引領團隊成功完成「OMO 小幫手」項目的開發，包括技術決策、基礎設施搭建和系統設計。
+      - 為內部項目開發 API Client Gem。
+      - 負責發票服務，包括解決線程問題、開發 API，以及為財務審計生成報告。
+      - 改進大型數據庫遷移的 CI/CD 工作流程。
+      - 升級和開發 E-tag 服務。
+      - 電子商務和 POS 系統開發。
+      - 為 LINE 服務導入端對端測試。
   -
     title: "Part Time"
     subTitle: "愛好資訊科技有限公司"
@@ -48,9 +50,10 @@ works:
     endedAt: "Present"
     highlights:
       - Sketchup 3D 鋼筋智慧建模插件，減少建築師 90% 鋼筋建模時間成本
+      - 台科大體育賽事報名系統
+      - 台科大 QS 聲譽系統
       - LINE Chatbot 客製化群組推播系統，解決只能全群或單群發送的限制
       - 廣吉食品C2M 系統開發設計與建置
-      - 台科大 QS 聲譽系統
   -
     title: "資訊長"
     subTitle: "毫米隧道科技股份有限公司"

@@ -25,11 +25,13 @@ works:
     startedAt: "Jul 2022"
     endedAt: "Present"
     highlights:
-      - "Pos Team member"
-      - "Improve database migration and deployment workflow"
-      - "Implementing automated testing in the LINE group buying system."
-      - "Upgrading the E-Tag feature."
-      - "Implementing the SMS reservation feature."
+      - Guided the team in the successful development of the "OMO Assistant" project.  including technical decision-making, infrastructure construction, and system design.
+      - making API Client Gem for internal projects
+      - in charge of invoice service, including solving thread problems, developing API, generating reports for financial audit
+      - Improve CI/CD workflow for large DB migration
+      - Upgrading and developing the E-tag service
+      - E-Commerce and POS System Development.
+      - Import E2E test for LINE Service.
   -
     title: "Part Time"
     subTitle: "AIHAO"
@@ -47,10 +49,10 @@ works:
     startedAt: "Jan 2019"
     endedAt: "Present"
     highlights:
-      - "Sketchup 3D Reinforcement Intelligent Modeling Plugin, reducing 90% of the architect's rebar modeling time and cost."
-      - "Customized Group Push System for LINE Chatbot, solving the limitation of only being able to send messages to the entire group or a single group."
-      - "Development, design, and implementation of the Kugifood C2M system."
-      - "QS Reputation Survey System for National Taiwan University of Science and Technology."
+      - Sketchup 3D rebar automatic build plugin.
+      - TAIWAN Tech sport registration system
+      - TAIWAN Tech QS Reputation Survey System.
+      - Kugifoods C2M system development, design, and implementation.
   -
     title: "CIO"
     subTitle: "Homie Studio Startup"
