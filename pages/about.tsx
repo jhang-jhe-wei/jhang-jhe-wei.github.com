@@ -58,8 +58,8 @@ export default function about ({ education, works, achievements, skillsList, pro
           <Toc/>
           <Profile/>
           <div className="mt-56 print:mt-14">
-            <List id="education" category="education" backgroundText="Education Background" data={education} />
             <List id="works" category="works" backgroundText="Work Experience" data={works} />
+            <List id="education" category="education" backgroundText="Education Background" data={education} />
             <List category="achievements" data={achievements} styleName="hidden print:grid" />
           </div>
         </div>
