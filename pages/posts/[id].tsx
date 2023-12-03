@@ -1,5 +1,7 @@
 import { NextSeo } from 'next-seo'
 import ReactMarkdown from 'react-markdown'
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { a11yDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import remarkGfm from 'remark-gfm'
 import Layout from '../../components/layout'
 import rehypeRaw from 'rehype-raw'
@@ -78,8 +80,29 @@ export default function Post (props: PostProps): React.ReactElement {
                       width={800}
                       height={800}
                     />
-                  )
-                }}
+                  ),
+                  code: (props) => {
+                    const {children, className, node, ...rest} = props
+                    const match = /language-(\w+)/.exec(className || '')
+                    return match ? (
+                      <SyntaxHighlighter
+                        {...rest}
+                        PreTag="div"
+                        children={String(children).replace(/\n$/, '')}
+                        language={match[1]}
+                        wrapLines={true}
+                        style={a11yDark}
+                        customStyle={{
+                          backgroundColor: 'transparent',
+                        }}
+                      />
+                    ) : (
+                        <code {...rest} className={className}>
+                          {children}
+                        </code>
+                      )
+                  }}
+                }
                 children={post.body}
               />
             <div id="gitalk-container"></div>
