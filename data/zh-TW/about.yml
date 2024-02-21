@@ -141,50 +141,23 @@ achievements:
 
 skillsList:
     -
-      title: 網站前端
+      title: 網頁
       skills:
         -
-          name: HTML
-          proficiency: 50
+          name: 後端
+          proficiency: 60
         -
-          name: CSS
-          proficiency: 70
-        -
-          name: Javascript
-          proficiency: 80
-    -
-      title: 網站後端
-      skills:
-        -
-          name: Rails
-          proficiency: 80
-        -
-          name: Bash
-          proficiency: 70
-        -
-          name: PostgreSQL
-          proficiency: 80
-    -
-      title: DSL
-      skills:
-        -
-          name: Sketchup
-          proficiency: 50
-        -
-          name: PLC
-          proficiency: 70
-        -
-          name: KNX
-          proficiency: 80
-    -
-      title: Devops
-      skills:
-        -
-          name: Nginx
-          proficiency: 50
-        -
-          name: Git
-          proficiency: 70
-        -
-          name: Docker
+          name: 前端
           proficiency: 30
+        -
+          name: Devops
+          proficiency: 10
+    -
+      title: 程式語言
+      skills:
+        -
+          name: Ruby
+          proficiency: 80
+        -
+          name: Typescript
+          proficiency: 20
