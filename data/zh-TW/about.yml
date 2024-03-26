@@ -5,57 +5,26 @@ works:
     startedAt: "七月 2022"
     endedAt: "Present"
     highlights:
-      - 引領團隊成功完成「OMO 小幫手」項目的開發，包括技術決策、基礎設施搭建和系統設計。
-      - 為內部項目開發 API Client Gem。
-      - 負責發票服務，包括解決線程問題、開發 API，以及為財務審計生成報告。
-      - 改進大型數據庫遷移的 CI/CD 工作流程。
-      - 升級和開發 E-tag 服務。
-      - 電子商務和 POS 系統開發。
-      - 為 LINE 服務導入端對端測試。
-  -
-    title: "Part Time"
-    subTitle: "愛好資訊科技有限公司"
-    startedAt: "二月 2021"
-    endedAt: "七月 2022"
-    highlights:
-      - 維護讚爾水晶球
-      - 維護台灣醒報
-      - 維護 AlphaCamp Lighthouse
-      - 升級 RubyJobs 網站
-      - 開發網站監測系統(uptime.tw)
+      - 引領 5 人團隊成功完成「門市助理」專案的開發， 此專案讓實體店店員更容易導購顧客到線上消費，目前已有超過 300+ 的門市使用。
+      - 改善 CI/CD 流程，避免 hotfix 被長時間的 migrating 佔用而無法部署。
+      - 解決在開立發票時產生的 Race conditions，使系統能支援一秒開立 300+ 張發票。
   -
     title: "Free Lancer"
     subTitle: "MYSELF"
     startedAt: "一月 2019"
     endedAt: "Present"
     highlights:
-      - Sketchup 3D 鋼筋智慧建模插件，減少建築師 90% 鋼筋建模時間成本
-      - 台科大體育賽事報名系統
-      - 台科大 QS 聲譽系統
-      - LINE Chatbot 客製化群組推播系統，解決只能全群或單群發送的限制
-      - 廣吉食品C2M 系統開發設計與建置
+      - 開發台科大體育賽事報名系統，簡化了傳統報名比賽的流程。從 2024 三月至今已完成 900+ 個報名。
+      - 開發 Sketchup 3D 自動化鋼筋配置套件，幫助建築師放置多種擺法的鋼筋到樑和柱中，並計算鋼筋數量。有效的節省 80% 建模及計算的時間。
+
   -
-    title: "資訊長"
+    title: "軟體工程師 & 共同創辦人"
     subTitle: "毫米隧道科技股份有限公司"
     startedAt: "六月 2020"
     endedAt: "一月 2021"
     highlights:
-      - "本人與學長姐一同創立的新創公司"
-      - "在半年內募得百萬創業獎金"
-      - "經濟部創業歸故里數位應用獎/ Shooly 水電資訊媒合平台/ 75 萬創業獎金"
-      - "Line ChatBot 設計大賽冠軍/ Shooly 水電資訊媒合平台/ 10 萬獎金"
-      - "教育部 109 U-Start 第一階段入圍/ PP-Bank 子母帳戶系統/ 35 萬創業獎金"
-      - "科技部 2020 FITI 全國前 40 名/ PP-Bank 子母帳戶系統/ 5 萬創業獎金"
-  -
-    title: "家教/助教"
-    subTitle: "仲介委託/台科大電機系 Java 課程"
-    startedAt: "八月 2021"
-    endedAt: "四月 2022"
-    highlights:
-      - Java：教學人數超過 50 人
-      - Go：教學人數 1 人
-      - C++：教學人數 5 人
-      - x86 Assembly：教學人數 1 人
+      - 開發「Shooly」水電媒合平台，幫助使用者尋找合適的技師，派遣並解決其問題。
+      - 贏得百萬創業獎金。
   -
     title: "電氣工程師"
     subTitle: "安耐美國際智慧節能科技工程有限公司"

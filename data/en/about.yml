@@ -5,54 +5,25 @@ works:
     startedAt: "Jul 2022"
     endedAt: "Present"
     highlights:
-      - Guided the team in the successful development of the "OMO Assistant" project.  including technical decision-making, infrastructure construction, and system design.
-      - making API Client Gem for internal projects
-      - in charge of invoice service, including solving thread problems, developing API, generating reports for financial audit
-      - Improve CI/CD workflow for large DB migration
-      - Upgrading and developing the E-tag service
-      - E-Commerce and POS System Development.
-      - Import E2E test for LINE Service.
-  -
-    title: "Part Time"
-    subTitle: "AIHAO"
-    startedAt: "Feb 2021"
-    endedAt: "Jul 2022"
-    highlights:
-      - "Maintaining 讚爾水晶球"
-      - "Maintaining 台灣醒報"
-      - "Maintaining AlphaCamp Lighthouse"
-      - "Upgrading RubyJobs website"
-      - "Developing website monitoring system (uptime.tw)"
+      - Guide the team(5 members) to develop the project "OMO Assistant", which makes shops expand their business easily. It's used by 300+ branch stores now.
+      - Improve CI/CD workflow for large DB migration. Allow hotfix deployment during migrating.
+      - Resolve race conditions in issuing invoices,  after that, our system can issue 300+ invoices per second without errors.
   -
     title: "Free Lancer"
     subTitle: "N/A"
     startedAt: "Jan 2019"
     endedAt: "Present"
     highlights:
-      - Sketchup 3D rebar automatic build plugin.
-      - TAIWAN Tech sport registration system
-      - TAIWAN Tech QS Reputation Survey System.
-      - Kugifoods C2M system development, design, and implementation.
+      - Built TAIWAN Tech sport registration system, which streamlines registration flow. from March 2024, it has finished 900+ registrations. 
+      - Built Sketchup 3D rebar automatic build plugin. which helps the architect to place various rebars in columns, and calculate the amount of rebars. it saves 90% of the time for the architect.
   -
-    title: "CIO"
+    title: "Software Engineer & Co-founder"
     subTitle: "Homie Studio Startup"
     startedAt: "Jun 2020"
     endedAt: "Jan 2021"
     highlights:
-      - "Build a SaaS startup with six months."
-      - "Ministry of Economic Aairs /Shooly/750k TWD - Line ChatBot Design competition champion/Shooly/100k TWD"
-      - "Ministry of Education 109U-Start / /350k TWD"
-      - "Ministry of Science and Technology 2020 FITI Top 40/PP-Bank System/50k TWD"
-  -
-    title: "Tutor/TA"
-    subTitle: "N/A"
-    startedAt: "Aug 2021"
-    endedAt: "Apr 2022"
-    highlights:
-      - "Java: Teaching a class with over 50 students."
-      - "Go: Teaching a class with 1 student."
-      - "C++: Teaching a class with 5 students."
-      - "x86 Assembly: Teaching a class with 1 student."
+      - Implement “Shooly” Platform. which helps people find ideal technicians and dispatch to resolve their problems.  
+      - Got a million Taiwanese dollars in financing.
   -
     title: "Electrical Engineer"
     subTitle: "ANIMATE ENGINEERING CO., LTD"
@@ -72,9 +43,9 @@ education:
     startedAt: "2018"
     endedAt: "2022"
     highlights:
-      - "2021 President Educational Award"
-      - "Student Club Master"
-      - "Tennis varsity member"
+      - Bachelor of Applied Technology (Major in Computer Science).
+      - Won 10+ awards (President award, Technology award, Sport award).
+      - Tennis school team member.
   -
     title: Hochschule Esslingen
     subTitle: Exchange Student in Informatik major
