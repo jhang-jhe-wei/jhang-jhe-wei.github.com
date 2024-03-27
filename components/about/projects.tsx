@@ -8,7 +8,7 @@ interface ProjectsProps {
 export default function Projects ({ projects }: ProjectsProps) {
   const { t } = useTranslation()
   return (
-    <div className="mt-40 print:hidden">
+    <div className="mt-40">
       <h3 className="hidden text-4xl text-center text-white md:block font-notosans shadow-gray-700 xl:text-7xl">Projects</h3>
       <h3 className="mt-5 text-3xl text-center text-secondary">{t('anchors.projects')}</h3>
       <ul className="mt-10">

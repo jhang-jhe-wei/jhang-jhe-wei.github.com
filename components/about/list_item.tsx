@@ -17,38 +17,38 @@ export default function ListItem ({ item }: {item: ListItemProps}) {
   }, [reveal])
 
   return (
-    <li ref={element} className={`relative mb-16 text-3xl xl:text-4xl text-gray-400 transition-all duration-500 ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'} print:mb-5 break-inside-avoid print:opacity-100 print:translate-y-0 md:min-h-[120px] min-h-[150px]`}>
-      <svg viewBox="0 0 2 2" className="absolute z-10 w-2 -left-1.25 top-2 print:top-1">
+    <li ref={element} className={`relative mb-16 text-3xl xl:text-4xl text-gray-400 transition-all duration-500 ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'} break-inside-avoid md:min-h-[120px] min-h-[150px]`}>
+      <svg viewBox="0 0 2 2" className="absolute z-10 w-2 -left-1.25 top-2">
         <circle cx="1" cy="1" r="1" className="fill-gray-400" />
       </svg>
       <div>
-        <div className="absolute flex flex-col items-end w-20 text-base text-right -left-28 xl:text-xl print:text-xs">
-          <p className="max-w-[2ch] break-words md:max-w-full print:max-w-full">
+        <div className="absolute flex flex-col items-end w-20 text-base text-right -left-28 xl:text-xl">
+          <p className="max-w-[2ch] break-words md:max-w-full">
             {item.startedAt}
           </p>
             {
               item.endedAt && '~'
             }
-          <p className="max-w-[2ch] break-words md:max-w-full print:max-w-full">
+          <p className="max-w-[2ch] break-words md:max-w-full">
           {item.endedAt}
           </p>
         </div>
         <div className="ml-10">
-          <h3 className="text-xl font-bold align-middle print:text-xs xl:text-2xl text-cyan-450">
+          <h3 className="text-xl font-bold align-middle xl:text-2xl text-cyan-450">
             {item.title}
-            <span className="block md:inline print:inline">
+            <span className="block md:inline">
               {
                 item.subTitle &&
-                <svg viewBox="0 0 2 2" className="w-1.5 inline mr-2 md:mx-2 print:ml-2">
+                <svg viewBox="0 0 2 2" className="w-1.5 inline mr-2 md:mx-2">
                   <circle cx="1" cy="1" r="1" className="fill-cyan-450" />
                 </svg>
               }
-              <span className="text-lg font-normal xl:text-xl print:text-xs">
+              <span className="text-lg font-normal xl:text-xl">
                 {item.subTitle}
               </span>
             </span>
           </h3>
-          <ul className="mt-5 text-base list-disc list-inside xl:text-lg dark:text-light text-primary print:mt-1 print:text-[10px] print:leading-4">
+          <ul className="mt-5 text-base list-disc list-inside xl:text-lg dark:text-light text-primary">
             {item.highlights?.map(highlight => (
               <li key={highlight}>{highlight}</li>
             ))}

@@ -3,7 +3,7 @@ export default function Toc (): React.ReactElement {
   const { t } = useTranslation()
   const anchors = ['profile', 'education', 'works', 'achievements', 'skills']
   return (
-    <ul className="justify-center hidden mt-20 sm:flex print:hidden print:sm:hidden">
+    <ul className="justify-center hidden mt-20 sm:flex">
     { anchors.map((anchor, index) =>
     <li key={ anchor } className={`px-6 text-base text-center  ${(index == anchors.length - 1) ? '' : 'border-r-2 border-primary dark:border-white'}`}>
       <button onClick={() => {

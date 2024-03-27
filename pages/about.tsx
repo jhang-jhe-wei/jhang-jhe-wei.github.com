@@ -54,13 +54,13 @@ export default function about ({ education, works, achievements, skillsList, pro
       <h1 className="hidden">{t('aboutDescription')}</h1>
       <Layout>
         <div className="container mx-auto">
-          <h2 className="mt-32 text-5xl text-center text-primary dark:text-light print:hidden">{t('about')}</h2>
+          <h2 className="mt-32 text-5xl text-center text-primary dark:text-light">{t('about')}</h2>
           <Toc/>
           <Profile/>
-          <div className="mt-56 print:mt-14">
+          <div className="mt-56">
             <List id="works" category="works" backgroundText="Work Experience" data={works} />
             <List id="education" category="education" backgroundText="Education Background" data={education} />
-            <List category="achievements" data={achievements} styleName="hidden print:grid" />
+            <List category="achievements" data={achievements} styleName="hidden" />
           </div>
         </div>
         <Achievements data={achievements}/>

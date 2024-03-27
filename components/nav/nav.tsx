@@ -13,7 +13,7 @@ export default function Nav (): React.ReactElement {
   const { t } = useTranslation()
 
   return (
-    <nav className="sticky top-0 z-30 px-10 py-6 bg-light dark:bg-primary bg-opacity-60 dark:bg-opacity-60 backdrop-blur dark:backdrop-blur print:hidden">
+    <nav className="sticky top-0 z-30 px-10 py-6 bg-light dark:bg-primary bg-opacity-60 dark:bg-opacity-60 backdrop-blur dark:backdrop-blur">
       <div className="flex items-center justify-between mx-auto">
         <Link
           href="/"
