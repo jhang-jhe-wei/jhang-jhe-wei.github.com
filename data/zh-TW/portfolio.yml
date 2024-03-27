@@ -2,7 +2,7 @@
     title: 台科大體育報名系統
     tag: 軟體系統
     image: /images/ntust-sport-registration.png
-    description: 開發台科大體育賽事報名系統，簡化了傳統報名比賽的流程。從 2024 三月至今已完成 900+ 個報名。使用的技術棧包含 Rails, React, Esbuild, Dokku......
+    description: 開發台科大體育賽事報名系統，簡化了傳統報名比賽的流程。從 2024 三月至今已完成 900+ 個報名。使用的技術棧包含 Rails, React, Esbuild, Dokku, Github Actions......
     demo_link: https://register-sport.ntust.edu.tw/
     highlight: true
 -

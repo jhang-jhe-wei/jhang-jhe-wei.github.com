@@ -2,7 +2,7 @@
     title: TAIWAN Tech Uni sport registration system,
     tag: Software App
     image: /images/ntust-sport-registration.png
-    description: Built TAIWAN Tech Uni sport registration system, which streamlines registration flow. from March 2024, it has finished 900+ registrations. Tech stack includes Rails, React, Esbuld, Dokku...
+    description: Built TAIWAN Tech Uni sport registration system, which streamlines registration flow. from March 2024, it has finished 900+ registrations. Tech stack includes Rails, React, Esbuld, Dokku, Github Actions...
     demo_link: https://register-sport.ntust.edu.tw/
     highlight: true
 -
