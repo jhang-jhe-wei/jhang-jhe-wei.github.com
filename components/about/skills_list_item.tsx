@@ -18,7 +18,7 @@ export default function SkillsListItem ({ skills, index }: SkillsListItemProps) 
   })
 
   return (
-    <li ref={element} className={`py-9 px-10 bg-white dark:bg-primary-opacity transition-opacity-and-transform duration-500 col-span-full md:col-start-2 ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'} ${(index % 4 % 3 == 0) ? 'xl:col-span-5' : 'xl:col-span-6'} ${(index % 2 == 0) ? 'md:col-span-8' : 'md:col-span-9'}`}>
+    <li ref={element} className={`py-9 px-10 bg-white dark:bg-primary-opacity transition-opacity-and-transform duration-500 ${reveal ? 'opacity-100' : 'translate-y-20 opacity-0'}`}>
       <h3 className="text-2xl font-bold text-cyan-450">{skills.title}</h3>
       <div className='w-full md:h-[200px] h-[100px]'>
       {
