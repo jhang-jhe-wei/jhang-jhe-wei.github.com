@@ -1,4 +1,11 @@
 -
+    title: TAIWAN Tech Uni sport registration system,
+    tag: Software App
+    image: /images/ntust-sport-registration.png
+    description: Built TAIWAN Tech Uni sport registration system, which streamlines registration flow. from March 2024, it has finished 900+ registrations. Tech stack includes Rails, React, Esbuld, Dokku...
+    demo_link: https://register-sport.ntust.edu.tw/
+    highlight: true
+-
     title: LINE Chatbot-Charity Website
     tag: Software App
     image: /images/charity-web.png
@@ -12,7 +19,6 @@
     description:  Hochschule Esslingen Course Selection Simulator is a simulation course selection system developed specifically for Hochschule Esslingen. This system aims to assist students in resolving confusion during the course selection process by providing features such as course selection simulation, course search, and course information. It is implemented using Rails and React.
     demo_link: https://course-simulator.dokku.wells.tw/
     code_link: https://github.com/jhang-jhe-wei/HE-application-project
-    highlight: true
 -
     title: LINE Chatbot-NTUST Senior
     tag: Software App
