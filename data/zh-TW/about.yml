@@ -10,8 +10,8 @@ works:
       - 解決在開立發票時產生的 Race conditions，使系統能支援一秒開立 300+ 張發票。
   -
     title: "Free Lancer"
-    subTitle: "MYSELF"
-    startedAt: "一月 2019"
+    subTitle: "N/A"
+    startedAt: "一月 2020"
     endedAt: "Present"
     highlights:
       - 開發台科大體育賽事報名系統，簡化了傳統報名比賽的流程。從 2024 三月至今已完成 900+ 個報名。
@@ -42,7 +42,7 @@ education:
     title: "臺灣科技大學"
     subTitle: "應用科技學士學位學程"
     startedAt: "2018"
-    endedAt: "2022"
+    endedAt: "2023"
     highlights:
       - "2021 總統教育獎優秀學生獎"
       - "全校不分系系學會會長"
@@ -54,8 +54,6 @@ education:
     endedAt: "2023"
     highlights:
       - "帶領小組成員完成選課模擬專題"
-      - "通過所有的技術課程(3 門)"
-      - "環遊歐洲"
   -
     title: "花蓮高工"
     subTitle: "電機科"

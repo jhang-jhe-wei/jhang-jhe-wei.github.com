@@ -11,7 +11,7 @@ works:
   -
     title: "Free Lancer"
     subTitle: "N/A"
-    startedAt: "Jan 2019"
+    startedAt: "Jan 2020"
     endedAt: "Present"
     highlights:
       - Built TAIWAN Tech Uni sport registration system, which streamlines registration flow. from March 2024, it has finished 900+ registrations. 
@@ -41,7 +41,7 @@ education:
     title: NTUST
     subTitle: Bachelor Degree Program of Applied Science and Technology
     startedAt: "2018"
-    endedAt: "2022"
+    endedAt: "2023"
     highlights:
       - Bachelor of Applied Technology (Major in Computer Science).
       - Won 10+ awards (President award, Technology award, Sport award).
@@ -53,8 +53,6 @@ education:
     endedAt: "2023"
     highlights:
       - "Led the Team to Finish the Course Simulator Application Project"
-      - "Passing all of technical courses"
-      - "Travelling most of Europe"
   -
     title: "National Hualien Industrial Vocational Senior High School"
     subTitle: "Electrical Engineering"
