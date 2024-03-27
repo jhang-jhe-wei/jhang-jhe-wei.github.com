@@ -7,7 +7,7 @@ export default function profoilo (): React.ReactElement {
   const highlights = {
     [t('achievementCount')]: 12,
     [t('projectCount')]: 30,
-    [t('customerCount')]: 5
+    [t('customerCount')]: 10
   }
   return (
     <div id="profile" className="mt-12 grid grid-cols-1 md:grid-cols-3 md:mt-36 md:gap-x-12">

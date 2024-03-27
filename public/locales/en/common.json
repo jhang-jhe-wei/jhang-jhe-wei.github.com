@@ -3,7 +3,7 @@
   "portfolio": "Portfolio",
   "portfolioDescription": "Record all projects since entering the university.",
   "about": "About",
-  "aboutDescription": "I'm now expanding my horizons into the realm of information technology.",
+  "aboutDescription": "I'm Wells, 4+ years of software development, Rails/React developer, National champion in electrical installations.",
   "blog": "Blog",
   "blogDescription": "Documenting what I observe and hear in writing enables me to witness my personal growth and rectify previous misunderstandings.",
   "contact": "Contact Me",
@@ -21,7 +21,7 @@
   "customerCount": "Customers",
   "nickNameIs": "Nickname: {{nickName}}",
   "locatedIn": "Location: Taipei",
-  "self-intro": "I'm Wells, a former national champion in Electrical Installations. After conquering the electrical field, I'm now expanding my horizons into the realm of information technology.",
+  "self-intro": "I'm Wells, 4+ years of software development, Rails/React developer, National champion in electrical installations.",
   "download-my-resume": "My Resume",
   "home": "Wells's Website",
   "homeDescription": "In here, you can find my portfolio, blog, and contact information."

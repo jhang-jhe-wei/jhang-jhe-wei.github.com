@@ -3,7 +3,7 @@
   "portfolio": "作品集",
   "portfolioDescription": "此頁搜集了本人從大學以來的所有作品，涵蓋軟體、硬體和一些嵌入式系統。",
   "about": "關於我",
-  "aboutDescription": "我是 Wells，擔任過室內配線的國手，征服了電氣領域後，現在正跨大版圖到資訊界。",
+  "aboutDescription": "我是 Wells，有 4 年以上的軟體開發經驗，常使用 Rails 和 React，過去曾是電氣裝配的技職國手。",
   "blog": "部落格",
   "blogDescription": "將所見所聞記錄成文字，留下紀錄打臉過去的自己。",
   "contact": "聯絡我",
@@ -21,7 +21,7 @@
   "customerCount": "合作客戶數",
   "nickNameIs": "暱稱： {{nickName}}",
   "locatedIn": "現居城市： 台北",
-  "self-intro": "我是 Wells，擔任過室內配線的國手，征服了電氣領域後，現在正跨大版圖到資訊界。",
+  "self-intro": "我是 Wells，有 4 年以上的軟體開發經驗，常使用 Rails 和 React，過去曾是電氣裝配的技職國手。",
   "download-my-resume": "我的履歷",
   "home": "Wells 的個人網站",
   "homeDescription": "在這裡，你可以找到我的專案、部落格、以及其他一些東西。"
