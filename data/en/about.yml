@@ -9,13 +9,22 @@ works:
       - Improve CI/CD workflow for large DB migration. Allow hotfix deployment during migrating.
       - Resolve race conditions in issuing invoices,  after that, our system can issue 300+ invoices per second without errors.
   -
-    title: "Free Lancer"
+    title: "Freelance Software Developer"
     subTitle: "N/A"
-    startedAt: "Jan 2020"
+    startedAt: "May 2020"
     endedAt: "Present"
     highlights:
       - Built TAIWAN Tech Uni sport registration system, which streamlines registration flow. from March 2024, it has finished 900+ registrations. 
       - Built Sketchup 3D rebar automatic build plugin. which helps the architect to place various rebars in columns, and calculate the amount of rebars. it saves 90% of the time for the architect.
+  -
+    title: "Part-Time Software Engineer"
+    subTitle: "AIHAO Information Company"
+    startedAt: "Jan 2021"
+    endedAt: "Jul 2022"
+    highlights:
+      - Resolve N+1 query problems, and speed up query performance.
+      - Upgrade RubyJobs Website(Ruby2.3/Rails4.2 ~> Ruby2.7/Rails6.1).
+      - Maintenance several Websites(ALPHA Camp, JARLL 讚爾藝術, 台灣醒報).
   -
     title: "Software Engineer & Co-founder"
     subTitle: "Homie Studio Startup"

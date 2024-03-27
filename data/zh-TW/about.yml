@@ -9,19 +9,27 @@ works:
       - 改善 CI/CD 流程，避免 hotfix 被長時間的 migrating 佔用而無法部署。
       - 解決在開立發票時產生的 Race conditions，使系統能支援一秒開立 300+ 張發票。
   -
-    title: "Free Lancer"
-    subTitle: "N/A"
-    startedAt: "一月 2020"
+    title: "自由接案"
+    subTitle: "軟體開發"
+    startedAt: "五月 2020"
     endedAt: "Present"
     highlights:
       - 開發台科大體育賽事報名系統，簡化了傳統報名比賽的流程。從 2024 三月至今已完成 900+ 個報名。
       - 開發 Sketchup 3D 自動化鋼筋配置套件，幫助建築師放置多種擺法的鋼筋到樑和柱中，並計算鋼筋數量。有效的節省 80% 建模及計算的時間。
-
+  -
+    title: "Part-Time 軟體工程師"
+    subTitle: "愛好資訊科技有限公司"
+    startedAt: "一月 2021"
+    endedAt: "七月 2022"
+    highlights:
+      - 解決 N+1 Query 問題，提升查詢效能。
+      - 升級 RubyJobs 網站（Ruby2.3/Rails4.2 ~> Ruby2.7/Rails6.1）。
+      - 維護多個專案（ALPHA Camp, JARLL 讚爾藝術, 台灣醒報）。
   -
     title: "軟體工程師 & 共同創辦人"
     subTitle: "毫米隧道科技股份有限公司"
-    startedAt: "六月 2020"
-    endedAt: "一月 2021"
+    startedAt: "十月 2019"
+    endedAt: "十二月 2020"
     highlights:
       - 開發「Shooly」水電媒合平台，幫助使用者尋找合適的技師，派遣並解決其問題。
       - 贏得百萬創業獎金。
