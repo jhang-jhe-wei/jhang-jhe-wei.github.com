@@ -1,9 +1,16 @@
 works:
   -
-    title: "工程師"
+    title: "後端工程師"
+    subTitle: "Shopline"
+    startedAt: "七月 2024"
+    endedAt: "Present"
+    highlights: []
+
+  -
+    title: "軟體工程師"
     subTitle: "CYBERBIZ"
     startedAt: "七月 2022"
-    endedAt: "Present"
+    endedAt: "七月 2024"
     highlights:
       - 引領 5 人團隊成功完成「門市助理」專案的開發， 此專案讓實體店店員更容易導購顧客到線上消費，目前已有超過 300+ 的門市使用。
       - 改善 CI/CD 流程，避免 hotfix 被長時間的 migrating 佔用而無法部署。

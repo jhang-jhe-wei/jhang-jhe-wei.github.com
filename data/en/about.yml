@@ -1,9 +1,16 @@
 works:
   -
+    title: "Backend Engineer"
+    subTitle: "Shopline"
+    startedAt: "Jul 2024"
+    endedAt: "Present"
+    highlights: []
+
+  -
     title: "Software Engineer"
     subTitle: "Cyberbiz"
     startedAt: "Jul 2022"
-    endedAt: "Present"
+    endedAt: "Jul 2024"
     highlights:
       - Guide the team(5 members) to develop the project "OMO Assistant", which makes shops expand their business easily. It's used by 300+ branch stores now.
       - Improve CI/CD workflow for large DB migration. Allow hotfix deployment during migrating.
